@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+augmentations/
+*.parquet
+.DS_Store
