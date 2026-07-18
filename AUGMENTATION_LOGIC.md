@@ -65,12 +65,13 @@ A rule is eligible only if:
 - Walk length free within bounds (default 1–4 steps).
 - Each step stacks decoration on the same assembly product.
 - **Core subgraph conserved:** the original core must remain a substructure of every intermediate (MCS / substructure coverage of core heavy atoms). Additive steps increase heavy-atom count; steps that dissolve or rewrite the core fail.
+- **Class-balanced sampling (default `--balance class`):** among eligible edits at a step, pick a `tailoring_class` uniformly, then an edit within that class. Avoids hydroxylation drowning rarer decorate families. Alternatives: `--balance rule` or `--balance uniform` (flat over products; OH-heavy).
 
 Single-step and multi-step walks are both emitted so the peel model sees empty and non-empty history.
 
 ## What this is not
 
-- Not class-weight heuristics (“glyco = 5”).
+- Not fixed DORA-style class weights (“glyco = 5”); class balance only equalizes among classes that already match the molecule.
 - Not DORA forward expansion ranked by MCS / fingerprint similarity to a target NP.
 - Not DORA-XGB reaction-feasibility scoring.
 - Not using UniProt IDs on JN rules as proof of Type I PKS post-tailoring.
