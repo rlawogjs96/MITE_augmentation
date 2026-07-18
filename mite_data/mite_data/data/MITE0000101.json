@@ -1,0 +1,76 @@
+{
+    "accession": "MITE0000101",
+    "status": "active",
+    "comment": "Atom number nine (in the SMARTS reaction) could be methylated, then this reaction leads to the final product",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-3002-6458",
+                "0000-0001-7044-2419"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 fixed reaction SMARTS by specifying explicit hydrogen of aromatic nitrogen and the explicit valence of Carbon nr 14 (zero hydrogen)"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        }
+    ],
+    "enzyme": {
+        "name": "Cxm5",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1016/j.apsb.2017.07.005"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A290YXM6",
+            "genpept": "AVL27080.1",
+            "mibig": "BGC0001485"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Heterocyclization"
+            ],
+            "reactionSMARTS": "[#8:1]=[#6:2](-[#6:4](-[#6:6]-[#6:7]1:[#6:15]2:[#6:10](:[#6:11]:[#6:12]:[#6:13]:[#6:14]:2):[nH:9]:[#6:8]:1)-[#16:5])-[#8:3]>>[#8:1]=[#6:2](-[#6:4]1-[#16:5]-[#6&H0:14]2:[#6:15]3:[#6:10](:[#6:11]:[#6:12]:[#6:13]:2):[nH:9]:[#6:8]:[#6:7]:3-[#6:6]-1)-[#8:3]",
+            "reactions": [
+                {
+                    "substrate": "O=C(O)C(S)Cc1c[nH]c2ccccc12",
+                    "products": [
+                        "O=C(O)C1Cc2c[nH]c3cccc(c23)S1"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.apsb.2017.07.005"
+                ]
+            }
+        }
+    ]
+}

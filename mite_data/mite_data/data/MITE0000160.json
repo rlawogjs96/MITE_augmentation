@@ -1,0 +1,78 @@
+{
+    "accession": "MITE0000160",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0003093.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 removed erroneous reaction belonging to PhoO. Reviewer 2 replaced CXSMARTS with regular SMARTS"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
+        }
+    ],
+    "enzyme": {
+        "name": "PhoC",
+        "description": "Short-chain dehydrogenases/reductase",
+        "references": [
+            "doi:10.1021/acs.orglett.2c01050"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00205CF1EC",
+            "genpept": "UPG58732.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "PhoD is a reductase responsible for the reduction of a double bond during biosynthesis of phomoxanthone A",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:14]:[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:19](=[#8:20])-[#6:18]=[#6:16](-[#8:17])-[#6:15]-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8]):[#6:4](-[#8:5]):[#6:3]:1>>[#6:1]-[#6:2]1:[#6:14]:[#6:13]2:[#6:6](:[#6:7](:[#6:9]3-[#6:19](=[#8:20])-[#6:18]-[#6@@:16](/[#8:17])-[#6:15]-[#6:10]:3:[#6:11]:2-[#8:12])-[#8:8]):[#6:4](-[#8:5]):[#6:3]:1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)c2c(O)c3c(c(O)c2c1)CC(O)=CC3=O",
+                    "products": [
+                        "Cc1cc(O)c2c(O)c3c(c(O)c2c1)C[C@H](O)CC3=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
+        }
+    ]
+}

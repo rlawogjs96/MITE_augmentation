@@ -1,0 +1,85 @@
+{
+    "accession": "MITE0000130",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-3002-6458",
+                "0000-0001-7044-2419",
+                "0000-0002-4187-2863",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-7493-459X"
+            ],
+            "comment": "Initial entry. Added reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "3",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        }
+    ],
+    "enzyme": {
+        "name": "ThnH",
+        "description": "Tryptophan 6-halogenase",
+        "references": [
+            "doi:10.1002/cbic.201500670"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI00078E7F2F",
+            "genpept": "AMR44308.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "chlorinates tryptophan to form 6-Cl-tryptophan (6-Cl-Trp)",
+            "reactionSMARTS": "[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3][c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]>>[#7:13]-[#6@@H:11](-[#6:10]-[c:7]1[c:8][n:9][c:5]2[c:4][c:3]([Cl])[c:2][c:1][c:6]12)-[#6:12](-[#8:15])=[O:16]",
+            "reactions": [
+                {
+                    "substrate": "N[C@@H](Cc1c[nH]c2ccccc12)C(=O)O",
+                    "products": [
+                        "N[C@@H](Cc1c[nH]c2cc(Cl)ccc12)C(=O)O"
+                    ],
+                    "isIntermediate": true,
+                    "description": "a chlorine atom is introduced in the indole ring of tryptophan."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1002/cbic.201500670"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "56528",
+                "ec": "1.14.19.59"
+            }
+        }
+    ]
+}

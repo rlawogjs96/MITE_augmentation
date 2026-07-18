@@ -1,0 +1,82 @@
+{
+    "accession": "MITE0000109",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6660-2715"
+            ],
+            "comment": "Initial entry. Reviwer 1 added description of reaction"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Reworked reaction SMARTS to implement editorial decision (removed residual product)."
+        },
+        {
+            "version": "3",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        }
+    ],
+    "enzyme": {
+        "name": "CmxA",
+        "description": "L-lysine cyclodeaminase",
+        "references": [
+            "doi:10.1002/anie.201808028"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000E33162C",
+            "genpept": "AXM43051.1",
+            "mibig": "BGC0001945"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Cyclization",
+                "Deamination"
+            ],
+            "description": "cyclization and deamination of lysine to pipecolic acid",
+            "reactionSMARTS": "[#7:1]-[#6:2]-[#6:3]-[#6:4]-[#6:5]-[#6@@:6](-[#6:8](=[#8:10])-[#8:9])/[#7:7]>>[#6:3]1-[#6:2]-[#7:7]-[#6@:6](/[#6:8](=[#8:10])-[#8:9])-[#6:5]-[#6:4]-1",
+            "reactions": [
+                {
+                    "substrate": "NCCCC[C@H](N)C(=O)O",
+                    "products": [
+                        "O=C(O)[C@@H]1CCCCN1"
+                    ],
+                    "isIntermediate": true,
+                    "description": "cyclization and deamination of lysine to pipecolic acid"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201808028"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "34304"
+            }
+        }
+    ]
+}

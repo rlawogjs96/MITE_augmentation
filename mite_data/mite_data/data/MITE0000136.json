@@ -1,0 +1,65 @@
+{
+    "accession": "MITE0000136",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed reaction SMARTS numbering and database IDs. The original submission specified RefSeq ID XP_020871972.1, which was changed to its GenPept equivalent."
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
+        }
+    ],
+    "enzyme": {
+        "name": "THAA1",
+        "description": "Acyltransferase subfamily IIIa",
+        "references": [
+            "doi:10.1038/s41467-020-19153-6"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000A29E8C9"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "description": "Acetylates the intermediate in the thalianin pathway in Arabidopsis thaliana ssp. lyrata",
+            "reactionSMARTS": "[#6:1]-[#6:2](=[#6:4]-[#6:5]-[#6:6]-[#6:7](=[#6:9]-[#6:10](-[#6@@:12](-[#6@:14](-[#6@@:16]1(-[#6:21]2-[#6@:22](-[#6:24]/[#6@@:25]3-[#6@@:33](/[#6:34])(-[#6:20]=2-[#6:19]-[#6:18]-1)-[#6:32]-[#6:31]-[#6@:29](/[#8:30])-[#6:26]-3(-[#6:28])-[#6:27])/[#8:23])/[#6:17])\\[#6:15])\\[#8:13])=[#8:11])-[#6:8])-[#6:3]>>[#6]-[#6](-[#8:13]\\[#6@:12](-[#6@:14](-[#6@@:16]1(-[#6:21]2-[#6@:22](-[#6:24]/[#6@@:25]3-[#6@@:33](/[#6:34])(-[#6:20]=2-[#6:19]-[#6:18]-1)-[#6:32]-[#6:31]-[#6@:29](/[#8:30])-[#6:26]-3(-[#6:28])-[#6:27])/[#8:23])/[#6:17])\\[#6:15])-[#6:10](-[#6:9]=[#6:7](-[#6:6]-[#6:5]-[#6:4]=[#6:2](-[#6:1])-[#6:3])-[#6:8])=[#8:11])=[#8]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)=CCC/C(C)=C/C(=O)[C@H](O)[C@@H](C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](O)CC[C@]21C",
+                    "products": [
+                        "CC(=O)O[C@@H](C(=O)C=C(C)CCC=C(C)C)[C@@H](C)[C@@]1(C)CCC2=C1[C@@H](O)C[C@H]1C(C)(C)[C@@H](O)CC[C@]21C"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Acetylates (-)-16-keto-3beta,7beta,15-thaliantriol to become (+)-3beta,7beta-dihydroxy-16-keto-thalian-15-yl acetate"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1038/s41467-020-19153-6"
+                ]
+            }
+        }
+    ]
+}

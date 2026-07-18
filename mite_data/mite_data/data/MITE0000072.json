@@ -1,0 +1,56 @@
+{
+    "accession": "MITE0000072",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0001-7411-5925"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 checked crosslinks, factual correctness, and reaction description, UniProt ID yet unreviewed. Reviewer 2 replaced CXSMARTS with normal SMARTS."
+        }
+    ],
+    "enzyme": {
+        "name": "TdaE",
+        "description": "Flavoprotein dioxygenase",
+        "references": [
+            "doi:10.1021/jacs.1c04996"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0001633292",
+            "genpept": "AFO93376.1",
+            "mibig": "BGC0000932"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Dioxygenation"
+            ],
+            "description": "TdaE relies on its substrate as electron donor (rather than NAD(P)H) for O2 activation and covalent flavin-oxygen adduct formation. Then, TdaE incorporates both O2-derived oxygen atoms into the substrate most likely via transient FlN5OO and FlN5O species, thereby breaking the CoA thioester bond and epoxidizing the tropone ring. ",
+            "reactionSMARTS": "[#6]-[#6](-[#6](-[#6](-[#7]-[#6]-[#6]-[#6](-[#7]-[#6]-[#6]-[#16]-[#6:49](-[#6:51]1-[#6:58]=[#6:57]-[#6:56]=[#6:55]-[#6:54]-[#6:52]=1-[#8:53])=[#8:50])=[#8])=[#8])-[#8])(-[#6]-[#8]-[#15](-[#8]-[#15](-[#8]-[#6]-[#6]1-[#6](-[#8]-[#15](-[#8])(-[#8])=[#8])-[#6](-[#8])-[#6](-[#7]2:[#6]3:[#6](:[#6](:[#7]:[#6]:[#7]:3)-[#7]):[#7]:[#6]:2)-[#8]-1)(-[#8])=[#8])(-[#8])=[#8])-[#6]>>[#8]-[#6:49](/[#6@@:51]12-[#8]\\[#6@@:58]-1-[#6:57]=[#6:56]-[#6:55]=[#6:54]-[#6:52]-2=[#8:53])=[#8:50]",
+            "reactions": [
+                {
+                    "substrate": "CC(C)(COP(=O)(O)OP(=O)(O)OCC1OC(n2cnc3c(N)ncnc32)C(O)C1OP(=O)(O)O)C(O)C(=O)NCCC(=O)NCCSC(=O)C1=C(O)CC=CC=C1",
+                    "products": [
+                        "O=C(O)[C@@]12O[C@@H]1C=CC=CC2=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1021/jacs.1c04996"
+                ]
+            }
+        }
+    ]
+}

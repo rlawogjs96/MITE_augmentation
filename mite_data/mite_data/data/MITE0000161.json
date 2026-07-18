@@ -1,0 +1,111 @@
+{
+    "accession": "MITE0000161",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0003093.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-0443-9902",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer 2 reworked reaction SMARTS numbering, replaced CXSMARTS with normal SMARTS, reaciont passes."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
+        }
+    ],
+    "enzyme": {
+        "name": "PhoK",
+        "description": "Reductase",
+        "references": [
+            "doi:10.1021/acs.orglett.2c01050"
+        ],
+        "databaseIds": {
+            "genpept": "UPG58740.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Acetylation"
+            ],
+            "reactionSMARTS": "[#6:1]\\[#6@:2]1-[#6@@:20](\\[#8:21])-[#6@:17]2(/[#6:18]-[#8:19])-[#6:6](-[#6:7](-[#6:9]3:[#6:15](-[#8:16]-2):[#6:14]:[#6:13]:[#6:12]:[#6:10]:3-[#8:11])=[#8:8])=[#6:4](-[#8:5])-[#6:3]-1>>[#6:1]\\[#6@:2]1-[#6@@:20](\\[#8:21]-[#6](=[#8])-[#6])-[#6@:17]2(/[#6:18]-[#8:19]-[#6](=[#8])-[#6])-[#6:6](-[#6:7](-[#6:9]3:[#6:15](-[#8:16]-2):[#6:14]:[#6:13]:[#6:12]:[#6:10]:3-[#8:11])=[#8:8])=[#6:4](-[#8:5])-[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C[C@@H]1CC(O)=C2C(=O)c3c(O)cccc3O[C@]2(CO)[C@@H]1O",
+                    "products": [
+                        "CC(=O)OC[C@]12Oc3cccc(O)c3C(=O)C1=C(O)C[C@@H](C)[C@H]2OC(C)=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11]3:[#6:17](-[#6:18](=[#8:19])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1):[#6:15](-[#8:16]):[#6:14]:[#6:13]:[#6:12]:3)=[#8:30]>>[#6:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11]3:[#6:17](-[#6:18](=[#8:19])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1):[#6:15](-[#8:16]):[#6:14]:[#6:13]:[#6:12]:3)-[#8]",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)c2c(c1)C(=O)c1cccc(O)c1C2=O",
+                    "products": [
+                        "Cc1cc(O)c2c(c1)C(O)c1cccc(O)c1C2=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:8]:[#6:7]2-[#6:9](-[#6:11]3:[#6:18](-[#6:19](=[#8:20])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1):[#6:16](-[#8:17]):[#6:15]:[#6:13](-[#8:14]):[#6:12]:3)=[#8:10]>>[#6:1]-[#6:2]1:[#6:8]:[#6:7]2-[c:9](=[c:11]3-[c:18](=[c:19](-[#8:20])-[#6:6]:2:[#6:4](-[#8:5]):[#6:3]:1)-[#6:16](=[#8:17])-[#6:15]=[#6:13](-[#8:14])-[#6:12]-3)-[#8:10]",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)c2c(c1)C(=O)c1cc(O)cc(O)c1C2=O",
+                    "products": [
+                        "Cc1cc(O)c2c(O)c3c(c(O)c2c1)CC(O)=CC3=O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "accession": "MITE0000068",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-1763-2525"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer fixed reaction SMARTS format."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2026-02-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed genpept ID to correspond with MIBiG."
+        }
+    ],
+    "enzyme": {
+        "name": "RebO",
+        "description": "Flavin-dependent L-tryptophan oxidase",
+        "references": [
+            "doi:10.1016/S1074-5521(02)00126-6"
+        ],
+        "databaseIds": {
+            "uniprot": "Q8KHS0",
+            "genpept": "BAC10674.1",
+            "mibig": "BGC0000821"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Flavin mononucleotide"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "reactionSMARTS": "[NH2:1][CH:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]>>[O:1]=[C:2]([CH2:3][c:4]1[cH:5][nH:6][c:7]2[c:8]([Cl:16])[cH:9][cH:10][cH:11][c:12]12)[C:13]([OH:14])=[O:15]",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1c[nH]c2c(Cl)cccc12)C(=O)O",
+                    "products": [
+                        "O=C(O)C(=O)Cc1c[nH]c2c(Cl)cccc12"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Should actually be L-chlorotryptophan."
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1128/JB.187.6.2084-2092.2005"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "27302",
+                "ec": "1.4.3.23"
+            }
+        }
+    ]
+}

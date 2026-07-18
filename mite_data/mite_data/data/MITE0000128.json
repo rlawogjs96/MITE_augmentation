@@ -1,0 +1,111 @@
+{
+    "accession": "MITE0000128",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0002841.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0009-0001-3436-5302",
+                "0009-0005-0157-5724",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-0443-9902",
+                "0000-0001-6534-6609",
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed general aromaticity. Reviewer 2 added bromination reaction variant. Reviewer 3 improved descriptions."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
+        }
+    ],
+    "enzyme": {
+        "name": "OrfA",
+        "description": "Halogenase",
+        "references": [
+            "doi:10.1128/aem.00806-22"
+        ],
+        "databaseIds": {
+            "genpept": "UUL71895.1"
+        },
+        "cofactors": {
+            "organic": [
+                "FAD"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "FADH2-dependent halogenase in the biosynthesis of chloroalbofungin",
+            "reactionSMARTS": "[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24]:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26]):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2>>[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24](:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26])-Cl):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2",
+            "reactions": [
+                {
+                    "substrate": "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2cc(C)n(C)c(=O)c2c1O)CC4OCO3",
+                    "products": [
+                        "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2c(Cl)c(C)n(C)c(=O)c2c1O)CC4OCO3"
+                    ],
+                    "description": "Chlorinates albofungin to chloralbofungin",
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/aem.00806-22"
+                ]
+            }
+        },
+        {
+            "tailoring": [
+                "Halogenation"
+            ],
+            "description": "FADH2-dependent halogenase in the biosynthesis of bromoalbofungin variants",
+            "reactionSMARTS": "[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24]:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26]):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2>>[#6:1]-[#8:2]\\[#6@@:3]1-[#6:9]2:[#8:10]:[#6:11]3:[#6:17](:[#6:18](=[#8:19]):[#6:8]:2-[#6@:6](\\[#8:7])-[#6:5]-[#6:4]-1):[#6:15](-[#8:16]):[#6:14]1-[#6:20]2:[#6:32](-[#8:33]):[#6:31]4:[#6:23](:[#6:24](:[#6:25](:[#7:27](:[#6:29]:4=[#8:30])-[#6:28])-[#6:26])-Br):[#6:22]:[#6:21]:2-[#6:34]-[#6:35]2-[#8:36]-[#6:37]-[#8:38]-[#6:12]:3:[#6:13]:1-2",
+            "reactions": [
+                {
+                    "substrate": "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2cc(C)n(C)c(=O)c2c1O)CC4OCO3",
+                    "products": [
+                        "CO[C@H]1CC[C@@H](O)c2c1oc1c3c4c(c(O)c1c2=O)-c1c(cc2c(Br)c(C)n(C)c(=O)c2c1O)CC4OCO3"
+                    ],
+                    "description": "Brominates albofungin to bromalbofungin",
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1128/aem.00806-22"
+                ]
+            }
+        }
+    ]
+}

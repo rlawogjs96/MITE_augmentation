@@ -1,0 +1,66 @@
+{
+    "accession": "MITE0000019",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-3002-6458",
+                "0000-0002-9747-3423"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer fixed numbering of reaction SMARTS and replaces CXSMARTS"
+        },
+        {
+            "version": "2",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
+        }
+    ],
+    "enzyme": {
+        "name": "MtmGIII",
+        "description": "Glycosyltransferase",
+        "references": [
+            "doi:10.1007/pl00008667"
+        ],
+        "databaseIds": {
+            "uniprot": "Q194P9",
+            "genpept": "CAK50789.1",
+            "mibig": "BGC0000247"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Glycosylation"
+            ],
+            "reactionSMARTS": "[#6:1]-[#8:2]\\[#6@:3]1-[#6:39]2-[#6@@:12](-[#6:23](-[#6:25]3:[#6:36](-[#8:37]):[#6:35]4:[#6:28](:[#6:29]:[#6:30](:[#6:32]:[#6:33]:4-[#8:34])-[#8:31]):[#6:27]:[#6:26]:3-[#6:38]-2)=[#8:24])(\\[#8:13]-[#6:14]2-[#8:22]-[#6:20](-[#6:21])-[#6:18](-[#8:19])-[#6:16](-[#8:17])-[#6:15]-2)-[#6:10](=[#8:11])-[#6:6](-[#6:7](=[#8:9])-[#6:8])=[#6:4]-1-[#8:5]>>[#6:1]-[#8:2]\\[#6@:3]1-[#6:39]2-[#6@@:12](-[#6:23](-[#6:25]3:[#6:36](-[#8:37]):[#6:35]4:[#6:28](:[#6:29]:[#6:30](:[#6:32]:[#6:33]:4-[#8:34])-[#8:31]):[#6:27]:[#6:26]:3-[#6:38]-2)=[#8:24])(\\[#8:13]-[#6:14]2-[#8:22]-[#6:20](-[#6:21])-[#6:18](-[#8:19])-[#6:16](-[#8:17]-[#6]3-[#8]-[#6](-[#6])-[#6](-[#8])-[#6](-[#8])-[#6]-3)-[#6:15]-2)-[#6:10](=[#8:11])-[#6:6](-[#6:7](=[#8:9])-[#6:8])=[#6:4]-1-[#8:5]",
+            "reactions": [
+                {
+                    "substrate": "CO[C@@H]1C(O)=C(C(C)=O)C(=O)[C@@]2(OC3CC(O)C(O)C(C)O3)C(=O)c3c(cc4cc(O)cc(O)c4c3O)CC12",
+                    "products": [
+                        "CO[C@@H]1C(O)=C(C(C)=O)C(=O)[C@@]2(OC3CC(OC4CC(O)C(O)C(C)O4)C(O)C(C)O3)C(=O)c3c(cc4cc(O)cc(O)c4c3O)CC12"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1007/pl00008667"
+                ]
+            }
+        }
+    ]
+}

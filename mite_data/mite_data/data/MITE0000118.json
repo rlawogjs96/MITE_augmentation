@@ -1,0 +1,89 @@
+{
+    "accession": "MITE0000118",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0002076.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0002-4977-2541",
+                "0000-0002-9747-3423",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6660-2715",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 added reaction description. Reviewer 2 replaced reaction SMILES to reaction SMARTS"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC ID."
+        }
+    ],
+    "enzyme": {
+        "name": "AcaR",
+        "description": "Oxidoreductase",
+        "references": [
+            "doi:10.1002/anie.201914154",
+            "doi:10.1016/j.bmc.2006.05.039"
+        ],
+        "databaseIds": {
+            "uniprot": "A0A5C4KWK7",
+            "genpept": "TNB95040.1"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "reduction of exocxclic double bond in dehydroacaterin to acaterin",
+            "reactionSMARTS": "[#6:1]=[#6:2]1-[#8:16]-[#6:14](=[#8:15])-[#6:4](-[#6@@:5](-[#6:7]-[#6:8]-[#6:9]-[#6:10]-[#6:11]-[#6:12]-[#6:13])/[#8:6])=[#6:3]-1>>[#6:13]-[#6:12]-[#6:11]-[#6:10]-[#6:9]-[#6:8]-[#6:7]-[#6@:5](-[#6:4]1-[#6:14](=[#8:15])-[#8:16]-[#6:2](-[#6:1])-[#6:3]=1)/[#8:6]",
+            "reactions": [
+                {
+                    "substrate": "C=C1C=C([C@H](O)CCCCCCC)C(=O)O1",
+                    "products": [
+                        "CCCCCCC[C@@H](O)C1=CC(C)OC1=O"
+                    ],
+                    "isIntermediate": false,
+                    "description": "reduction of 4,5-didehydroacaterin to acaterin"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression",
+                    "In vitro assay"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201914154",
+                    "doi:10.1016/j.bmc.2006.05.039"
+                ]
+            }
+        }
+    ]
+}

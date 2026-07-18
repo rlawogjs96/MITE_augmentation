@@ -1,0 +1,86 @@
+{
+    "accession": "MITE0000031",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-3002-6458"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed reactionSMARTS:reactionSMARTS, validation still not passing. Reviewer partially fixed reactions:substrate, validation still not passing. Reviewer partially fixed reactions:products, validation still not passing. Reviewer 2 fixed numbering of reaction SMARTS, removed explicit charges, and reworked substrate/product."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions. Removed non-covalently bond cofactor from reaction depiction to implement editorial guidelines."
+        }
+    ],
+    "enzyme": {
+        "name": "SacF",
+        "description": "C-methyltransferase",
+        "references": [
+            "doi:10.1111/j.1365-2958.2004.04433.x"
+        ],
+        "databaseIds": {
+            "uniprot": "Q5JCL5",
+            "genpept": "AAL33761.1",
+            "mibig": "BGC0000421"
+        },
+        "cofactors": {
+            "organic": [
+                "SAM"
+            ],
+            "inorganic": [
+                "FeS"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "reactionSMARTS": "[NH2:1][CH:2]([C:11]([OH:13])=[O:12])[CH2:3][c:4]1[cH:10][cH:9][c:7]([OH:8])[cH:6][cH:5]1>>[NH2:1][CH:2]([C:11]([OH:13])=[O:12])[CH2:3][c:4]1[cH:10][c:9](C)[c:7]([OH:8])[cH:6][cH:5]1",
+            "reactions": [
+                {
+                    "substrate": "NC(Cc1ccc(O)cc1)C(=O)O",
+                    "products": [
+                        "Cc1cc(CC(N)C(=O)O)ccc1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1111/j.1365-2958.2004.04433.x"
+                ]
+            }
+        }
+    ]
+}

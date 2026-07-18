@@ -1,0 +1,77 @@
+{
+    "accession": "MITE0000089",
+    "status": "retired",
+    "retirementReasons": [
+        "CPT2 is a gatekeeping enzyme producing the nerylneryl terpene scaffold and not a tailoring enzyme and therefore out of scope of MITE."
+    ],
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 added correct number of products for a balanced reaction."
+        },
+        {
+            "version": "2",
+            "date": "2024-12-15",
+            "contributors": [
+                "0000-0001-6534-6609"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Reviewer 1 retired the entry due to being out of scope of MITE."
+        }
+    ],
+    "enzyme": {
+        "name": "CPT2",
+        "description": "Nerylneryl diphosphate synthase",
+        "references": [
+            "doi:10.1073/pnas.0904113106",
+            "doi:10.1105/tpc.113.111013",
+            "doi:10.1371/journal.pone.0119302"
+        ],
+        "databaseIds": {
+            "uniprot": "K7WQ45",
+            "genpept": "AGK82801.1",
+            "mibig": "BGC0001322"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Prenylation"
+            ],
+            "reactionSMARTS": "[#6]\\[#6](-[#6])=[#6]\\[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]-[#6](=[#6])-[#6]-[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O>>[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O.[#6]\\[#6](-[#6])=[#6]\\[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#6]\\[#6](-[#6])=[#6]/[#6]-[#8]P([#8-])(=O)[#8]P([#8-])([#8-])=O",
+            "reactions": [
+                {
+                    "substrate": "C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].C=C(C)CCOP(=O)([O-])OP(=O)([O-])[O-].CC(C)=CCOP(=O)([O-])OP(=O)([O-])[O-]",
+                    "products": [
+                        "O=P([O-])([O-])OP(=O)([O-])O",
+                        "O=P([O-])([O-])OP(=O)([O-])O",
+                        "O=P([O-])([O-])OP(=O)([O-])O",
+                        "CC(C)=CCC/C(C)=C\\CC/C(C)=C\\CC/C(C)=C\\COP(=O)([O-])OP(=O)([O-])[O-]"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1073/pnas.0904113106"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "11328",
+                "ec": "2.5.1.28"
+            }
+        }
+    ]
+}

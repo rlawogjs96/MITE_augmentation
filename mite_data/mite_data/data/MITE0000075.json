@@ -1,0 +1,98 @@
+{
+    "accession": "MITE0000075",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-3002-6458",
+                "0000-0001-7044-2419"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 fixed reaction, replaced wildcards in SMILES with full structures."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Fixed reaction SMARTS indexing."
+        },
+        {
+            "version": "4",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID."
+        }
+    ],
+    "enzyme": {
+        "name": "ClmM2",
+        "description": "O-methyltransferase",
+        "references": [
+            "doi:10.1016/j.chembiol.2012.01.014"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000249FC4F",
+            "genpept": "CCC55909.1",
+            "mibig": "BGC0000973"
+        },
+        "cofactors": {
+            "inorganic": [
+                "FeS"
+            ],
+            "organic": [
+                "SAM"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Methylation"
+            ],
+            "description": "O-methylation of collismycin D",
+            "reactionSMARTS": "[#6:1]-[#16:2]-[#6:3]1:[#6:15](-[#6:16]=[#7:17]-[#8:18]):[#7:14]:[#6:7](-[#6:8]2:[#7:13]:[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#6:6]:[#6:4]:1-[#8:5]>>[#6:1]-[#16:2]-[#6:3]1:[#6:15](-[#6:16]=[#7:17]-[#8:18]):[#7:14]:[#6:7](-[#6:8]2:[#7:13]:[#6:12]:[#6:11]:[#6:10]:[#6:9]:2):[#6:6]:[#6:4]:1-[#8:5]-[#6]",
+            "reactions": [
+                {
+                    "substrate": "CSc1c(O)cc(-c2ccccn2)nc1/C=N/O",
+                    "products": [
+                        "COc1cc(-c2ccccn2)nc(C=NO)c1SC"
+                    ],
+                    "isIntermediate": false,
+                    "description": "O-methylation of collismycin D, resulting in collismycin A"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2012.01.014"
+                ]
+            }
+        }
+    ]
+}

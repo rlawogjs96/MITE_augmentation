@@ -1,0 +1,4875 @@
+{
+  "match_mode": "connectivity",
+  "rules_file": "C:\\papers\\jn_mite_merged_rules.tsv",
+  "n_rules": 387,
+  "endpoint_source": "C:\\papers\\deterministic_stage\\test_set_normalized.csv",
+  "mature_source": "C:\\papers\\bgc_original_target.csv",
+  "max_steps": 8,
+  "beam_width": 24,
+  "n_bgc": 64,
+  "n_ok": 64,
+  "n_any_fire_on_mature": 64,
+  "n_reached_core": 12,
+  "n_already_core": 1,
+  "n_peeled_to_core": 11,
+  "reach_rate_ok": 0.1875,
+  "mean_firing_rules_on_mature": 34.359375,
+  "rows": [
+    {
+      "bgc_id": "BGC0000001",
+      "cluster_name": "Abyssomicin",
+      "status": "ok",
+      "mature_heavy_atoms": 25,
+      "core_heavy_atoms": 20,
+      "n_firing_rules": 27,
+      "n_firing_jn": 19,
+      "n_firing_mite": 8,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Hydroxylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Monooxygenation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 3,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1CC(C)C(=O)C2=C3OC4CC(C=CC1=O)C3(CC4C)OC2=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CCC2C=CC(=O)C(C)CC(C)C(=O)C3=CC2(C1)OC3=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CCC2C=CC(=O)C(C)CC(C)C(=O)C(C=O)=C[C]2C1"
+        }
+      ],
+      "best_similarity": 0.45675675675675675,
+      "best_smiles": "CC1CCC2C=CC(=O)C(C)CC(C)C(=O)C(C=O)=C[C]2C1",
+      "path_sources": {
+        "MITE_rdchiral": 1,
+        "JN_rules": 2
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 1,
+        "Hydroxylation-like oxygen insertion": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000002",
+      "cluster_name": "Aculeximycin",
+      "status": "ok",
+      "mature_heavy_atoms": 116,
+      "core_heavy_atoms": 64,
+      "n_firing_rules": 42,
+      "n_firing_jn": 22,
+      "n_firing_mite": 20,
+      "firing_classes": {
+        "Hydroxylation": 12,
+        "O-glycosylation": 8,
+        "Decarboxylation": 6,
+        "Hydroxylation|Oxidation": 3,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydrolysis": 1,
+        "Other": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C1CC=C(C)C(O)C(C)C(OC2OC(CO)C(O)C(O)C2O)CC(O)C(C)C(O)CC(O)CC(O)C(O)C(=O)CC(OC2OC(C)C(O)C(OC3CC(N)C(O)C(C)O3)C2OC2OC(C)C(O)C(O)C2O)C(C)CCC(O)CC(O)CC=C(CC)C(=O)O1)CC"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C1CC=C(C)C(O)C(C)C(OC2OC(CO)C(O)C(O)C2O)CC(O)C(C)C(O)CC(O)CC(O)C(O)C(=O)CC(O)C(C)CCC(O)CC(O)CC=C(CC)C(=O)O1)CC"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C1CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(O)CC(O)CC(O)C(O)C(=O)CC(O)C(C)CCC(O)CC(O)CC=C(CC)C(=O)O1)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C1CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(O)CC(O)CC(O)CC(=O)CC(O)C(C)CCC(O)CC(O)CC=C(CC)C(=O)O1)CC"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C(O)CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(O)CC(O)CC(O)CC(=O)CC(O)C(C)CCC(O)CC(O)CC=C(C=O)CC)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0057_MITE0000064",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C(O)CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(O)CC(O)CC(O)CC(=O)CC(O)C(C)CCC(O)CC(O)CC=C(C)CC)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0125_MITE0000218",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C(O)CC=C(C)CC(C)C(O)CC(O)C(C)C(O)CC(O)CC(O)CC(=O)CC(O)C(C)CCC(O)CC(O)CC=C(C)CC)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C(O)CC=C(C)CC(C)CCC(O)C(C)C(O)CC(O)CC(O)CC(=O)CC(O)C(C)CCC(O)CC(O)CC=C(C)CC)CC"
+        }
+      ],
+      "best_similarity": 0.6593137254901961,
+      "best_smiles": "CCCCC(C)C(O)C(C=CC(O)C(C)C(O)CC=C(C)CC(C)CCC(O)C(C)C(O)CC(O)CC(O)CC(=O)CC(O)C(C)CCC(O)CC(O)CC=C(C)CC)CC",
+      "path_sources": {
+        "JN_rules": 4,
+        "MITE_rdchiral": 4
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 1,
+        "O-glycosylation": 3,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 1,
+        "Hydroxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000018",
+      "cluster_name": "Angolamycin",
+      "status": "ok",
+      "mature_heavy_atoms": 64,
+      "core_heavy_atoms": 28,
+      "n_firing_rules": 40,
+      "n_firing_jn": 24,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 5,
+        "N-glycosylation": 3,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Epoxidation": 1,
+        "Methylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 3,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)CC(O)C(C)C(O)C(CC=O)CC(C)C(=O)C=CC2(C)OC2C1COC1OC(C)C(O)C(OC)C1OC"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1OC(=O)CC(O)C(C)C(O)C(CC=O)CC(C)C(=O)C=CC2(C)OC2C1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0161_MITE0000199",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCC1OC(=O)CC(O)C(C)C(O)C(CC=O)CC(C)C(=O)C=CC(C)=CC1C"
+        }
+      ],
+      "best_similarity": 0.9702380952380952,
+      "best_smiles": "CCC1OC(=O)CC(O)C(C)C(O)C(CC=O)CC(C)C(=O)C=CC(C)=CC1C",
+      "path_sources": {
+        "JN_rules": 2,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000028",
+      "cluster_name": "Bafilomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 58,
+      "core_heavy_atoms": 43,
+      "n_firing_rules": 38,
+      "n_firing_jn": 21,
+      "n_firing_mite": 17,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Hydroxylation": 4,
+        "Methylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Cyclization": 1,
+        "Hydrolysis": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC(=O)OC1C(C)C(O)C(C)C1(O)CC(OC(=O)C=CC(=O)NC2=C(O)CCC2=O)C(C)C(C(C)C)O1"
+        },
+        {
+          "rule_name": "rule0163_2",
+          "source": "JN_rules",
+          "terms": "N-glycosylation",
+          "smiles": "COC1C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC(=O)OC1C(C)C(O)C(C)C1(O)CC(OC(=O)C=CC(=O)O)C(C)C(C(C)C)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)C(O)C(C)C(O)C(C)C1(O)CC(OC(=O)C=CC(=O)O)C(C)C(C(C)C)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)C(O)C(C)C(O)C(C)C1CC(OC(=O)C=CC(=O)O)C(C)C(C(C)C)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)C(O)C(C)C(O)C(C)CCC(OC(=O)C=CC(=O)O)C(C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC=CC(=O)OC(CCC(C)C(O)C(C)C(O)C(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)OC)C(C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(CO)C(=O)OC(CCC(C)C(O)C(C)C(O)C(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)OC)C(C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "CC=C(C)C(=O)OC(CCC(C)C(O)C(C)C(O)C(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)OC)C(C)C(O)C(C)C"
+        }
+      ],
+      "best_similarity": 0.8297567954220315,
+      "best_smiles": "CC=C(C)C(=O)OC(CCC(C)C(O)C(C)C(O)C(C=CC=C(C)CC(C)C(O)C(C)C=C(C)C=CC=O)OC)C(C)C(O)C(C)C",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "N-glycosylation": 1,
+        "O-glycosylation": 2,
+        "Oxidation": 1,
+        "Decarboxylation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000031",
+      "cluster_name": "Borrelidin",
+      "status": "ok",
+      "mature_heavy_atoms": 35,
+      "core_heavy_atoms": 34,
+      "n_firing_rules": 37,
+      "n_firing_jn": 21,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "Hydroxylation": 7,
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Dehydration": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 1,
+      "path": [
+        {
+          "rule_name": "rule_nitrile_methyl_1",
+          "source": "JN_rules",
+          "terms": "Nitrile installation",
+          "smiles": "CC1=CC=CCC(C2CCCC2C(=O)O)OC(=O)CC(O)C(C)CC(C)CC(C)CC(C)C1O"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CC1=CC=CCC(C2CCCC2C(=O)O)OC(=O)CC(O)C(C)CC(C)CC(C)CC(C)C1O",
+      "path_sources": {
+        "JN_rules": 1
+      },
+      "path_classes": {
+        "Nitrile installation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000032",
+      "cluster_name": "Calcimycin",
+      "status": "ok",
+      "mature_heavy_atoms": 38,
+      "core_heavy_atoms": 24,
+      "n_firing_rules": 26,
+      "n_firing_jn": 22,
+      "n_firing_mite": 4,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 6,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "C[CH]CC(C)C(O)C(C)C(=O)c1ccc[nH]1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(CO)CC(C)C(O)C(C)C(=O)c1ccc[nH]1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(CC(C)C(O)C(C)C(=O)c1ccc[nH]1)C(O)CO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(CC(C)C(O)C(C)C(=O)c1ccc[nH]1)C(O)C(O)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC(CC(C)C(=O)c1ccc[nH]1)CC(C)C(O)C(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(CC(C)C(=O)c1ccc[nH]1)CC(C)C(O)C(C)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CC(=O)C(O)C(C)CC(C)CC(C)C(=O)c1ccc[nH]1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(CC(C)C(=O)c1ccc[nH]1)CC(C)C(O)C(=O)CCO"
+        }
+      ],
+      "best_similarity": 0.5248,
+      "best_smiles": "CC(CC(C)C(=O)c1ccc[nH]1)CC(C)C(O)C(=O)CCO",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Reduction": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000035",
+      "cluster_name": "Chalcomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 49,
+      "core_heavy_atoms": 25,
+      "n_firing_rules": 33,
+      "n_firing_jn": 22,
+      "n_firing_mite": 11,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 4,
+        "Hydroxylation": 3,
+        "Hydroxylation|Oxidation": 3,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Epoxidation": 1,
+        "Methylation": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(C)OC(OC2C(C)C=CC(=O)OC(C)C(C)C3OC3C=CC(=O)C(C)(O)CC2C)C1O"
+        },
+        {
+          "rule_name": "rule_epoxide_1",
+          "source": "JN_rules",
+          "terms": "Epoxidation",
+          "smiles": "COC1CC(C)OC(OC2C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)(O)CC2C)C1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(C)OC(OC2C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC2C)C1O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(CC(C)O)C(O)[CH]OC1C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "COC(CC(C)=O)C(O)[CH]OC1C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC(CC(=O)CCO)C(O)[CH]OC1C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC1C)CC(=O)CCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC1C)CC(=O)C(CO)CO"
+        }
+      ],
+      "best_similarity": 0.7030411449016101,
+      "best_smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)C(C)C=CC=CC(=O)C(C)CC1C)CC(=O)C(CO)CO",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "Epoxidation": 1,
+        "O-glycosylation": 1,
+        "Reduction": 1,
+        "Decarboxylation": 2,
+        "Hydroxylation|Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000036",
+      "cluster_name": "Chlorothricin",
+      "status": "ok",
+      "mature_heavy_atoms": 66,
+      "core_heavy_atoms": 30,
+      "n_firing_rules": 41,
+      "n_firing_jn": 20,
+      "n_firing_mite": 21,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 7,
+        "Halogenation": 5,
+        "Hydroxylation": 3,
+        "Methylation": 3,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1CC23OC(=O)C(=C2O)OC(=O)C2C(C=CC4C(O)CCCC42)CCCCC=CC3C=C1C(=O)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC23C=C(OC(=O)C4C(C=CC5C(O)CCCC54)CCCCC=CC2C=C1C(=O)O)C(=O)O3"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC2(C=CC(=O)O2)C(C=CCCCCC2C=CC3C(O)CCCC3C2C=O)C=C1C(=O)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1C[C](C=CC=O)C(C=CCCCCC2C=CC3C(O)CCCC3C2C=O)C=C1C(=O)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1C[C](C=C(C=O)CO)C(C=CCCCCC2C=CC3C(O)CCCC3C2C=O)C=C1C(=O)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1C[C](C=C(CO)C(=O)CO)C(C=CCCCCC2C=CC3C(O)CCCC3C2C=O)C=C1C(=O)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(=O)C(=C[C]1CC(C)C(C(=O)O)=CC1C=CCCCCC1C=CC2C(O)CCCC2C1C=O)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC(=O)C(=C[C]1CC(C)C(C)=CC1C=CCCCCC1C=CC2C(O)CCCC2C1C=O)CO"
+        }
+      ],
+      "best_similarity": 0.29545454545454547,
+      "best_smiles": "CC(=O)C(=C[C]1CC(C)C(C)=CC1C=CCCCCC1C=CC2C(O)CCCC2C1C=O)CO",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 4,
+        "Decarboxylation": 2,
+        "Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000040",
+      "cluster_name": "Concanamycin A",
+      "status": "ok",
+      "mature_heavy_atoms": 61,
+      "core_heavy_atoms": 45,
+      "n_firing_rules": 42,
+      "n_firing_jn": 22,
+      "n_firing_mite": 20,
+      "firing_classes": {
+        "Hydroxylation": 10,
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Methylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Hydrolysis": 1,
+        "Other": 1,
+        "Oxidation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 3,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=CC(O)C(C)C(CC(=O)C(C)C(O)C(C)C1OC(=O)C=CC(C)=CC(C)C(O)C(CC)C(O)C(C)CC(C)=CC=CC1OC)OC1CC(O)C(OC(N)=O)C(C)O1"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC=CC(O)C(C)C(O)CC(=O)C(C)C(O)C(C)C1OC(=O)C=CC(C)=CC(C)C(O)C(CC)C(O)C(C)CC(C)=CC=CC1OC"
+        },
+        {
+          "rule_name": "rule1165_1",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=CC(O)C(C)C(O)CC(=O)C(C)C(O)C(C)C1CC=CC=C(C)CC(C)C(O)C(CC)C(O)C(C)C=C(C)C=CC(=O)O1"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CC=CC(O)C(C)C(O)CC(=O)C(C)C(O)C(C)C1CC=CC=C(C)CC(C)C(O)C(CC)C(O)C(C)C=C(C)C=CC(=O)O1",
+      "path_sources": {
+        "JN_rules": 3
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "O-glycosylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000041",
+      "cluster_name": "Coronafacic acid",
+      "status": "ok",
+      "mature_heavy_atoms": 15,
+      "core_heavy_atoms": 16,
+      "n_firing_rules": 28,
+      "n_firing_jn": 19,
+      "n_firing_mite": 9,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1C=C(C=O)C2CCC(=O)C2C1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1C=C(C(=O)CO)C2CCC(=O)C2C1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1C=C(C(C)=O)C2CCC(=O)C2C1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1C=C(C(=O)CCO)C2CCC(=O)C2C1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(=O)C1=CC(CC)CC2C(=O)CCC12"
+        },
+        {
+          "rule_name": "mite_rdchiral_0157_MITE0000163",
+          "source": "MITE_rdchiral",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(=O)C1=CC(CC)CC2C(=O)C(C(=O)[O-])CC12"
+        }
+      ],
+      "best_similarity": 0.6106194690265486,
+      "best_smiles": "CCC(=O)C1=CC(CC)CC2C(=O)C(C(=O)[O-])CC12",
+      "path_sources": {
+        "JN_rules": 5,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 3,
+        "Decarboxylation": 3
+      }
+    },
+    {
+      "bgc_id": "BGC0000047",
+      "cluster_name": "Dihydrochalcomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 46,
+      "core_heavy_atoms": 25,
+      "n_firing_rules": 29,
+      "n_firing_jn": 20,
+      "n_firing_mite": 9,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Hydroxylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(C)OC(OC2C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC2C)C1O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(CC(C)O)C(O)[CH]OC1C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "COC(CC(C)=O)C(O)[CH]OC1C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC1C)CC(C)=O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC1C)CC(=O)CCO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0157_MITE0000163",
+          "source": "MITE_rdchiral",
+          "terms": "Decarboxylation",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC1C)CC(=O)C(CO)C(=O)[O-]"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)CCCCCC(=O)C(C)CC1C)CC(=O)C(C)C(=O)[O-]"
+        },
+        {
+          "rule_name": "mite_rdchiral_0112_MITE0000327",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)CCCC=CC(=O)C(C)CC1C)CC(=O)C(C)C(=O)[O-]"
+        }
+      ],
+      "best_similarity": 0.643979057591623,
+      "best_smiles": "COC(C[CH]OC1C(C)C=CC(=O)OC(C)CCCC=CC(=O)C(C)CC1C)CC(=O)C(C)C(=O)[O-]",
+      "path_sources": {
+        "JN_rules": 4,
+        "MITE_rdchiral": 4
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "O-glycosylation": 1,
+        "Reduction": 2,
+        "Hydroxylation|Oxidation": 1,
+        "Decarboxylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000050",
+      "cluster_name": "E-837",
+      "status": "ok",
+      "mature_heavy_atoms": 27,
+      "core_heavy_atoms": 29,
+      "n_firing_rules": 32,
+      "n_firing_jn": 19,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "Hydroxylation": 7,
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Monooxygenation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(C)C(=O)C(C)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(C)C(=O)C(C)=O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0076_MITE0000214",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(C)CC(C)=O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(C)CC(=O)CCO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0157_MITE0000163",
+          "source": "MITE_rdchiral",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(C)CC(=O)C(CO)C(=O)[O-]"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(CCO)CC(=O)C(CO)C(=O)[O-]"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(CC)CC(=O)C(CO)C(=O)[O-]"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(CC)CC(=O)C(C)C(=O)[O-]"
+        }
+      ],
+      "best_similarity": 0.7186813186813187,
+      "best_smiles": "CC=C(C)C(O)C(C)C=CC=C(C)CCC(O)CC=C(CC)CC(=O)C(C)C(=O)[O-]",
+      "path_sources": {
+        "JN_rules": 5,
+        "MITE_rdchiral": 3
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 3,
+        "Reduction": 1,
+        "Oxidation": 1,
+        "Decarboxylation": 3
+      }
+    },
+    {
+      "bgc_id": "BGC0000054",
+      "cluster_name": "Erythromycin",
+      "status": "ok",
+      "mature_heavy_atoms": 51,
+      "core_heavy_atoms": 27,
+      "n_firing_rules": 34,
+      "n_firing_jn": 23,
+      "n_firing_mite": 11,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Methylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 4,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0035_MITE0000183",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)(O)CC(C)C(=O)C(C)C(O)C1C"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(O)C(C)(O)CC(C)C(=O)C(C)C(O)C1C"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)C(C)C(O)C(C)C(O)C(C)(O)CC(C)C(=O)C(C)C(O)C1C"
+        },
+        {
+          "rule_name": "rule_p450_tert",
+          "source": "JN_rules",
+          "terms": "C-hydroxylation (P450 reverse)",
+          "smiles": "CCC1OC(=O)C(C)C(O)C(C)C(O)C(C)CC(C)C(=O)C(C)C(O)C1C"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC1OC(=O)C(C)C(O)C(C)C(O)C(C)CC(C)C(=O)C(C)C(O)C1C",
+      "path_sources": {
+        "MITE_rdchiral": 1,
+        "JN_rules": 3
+      },
+      "path_classes": {
+        "Hydroxylation": 1,
+        "O-glycosylation": 2,
+        "C-hydroxylation (P450 reverse)": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000058",
+      "cluster_name": "FD-891",
+      "status": "ok",
+      "mature_heavy_atoms": 41,
+      "core_heavy_atoms": 38,
+      "n_firing_rules": 28,
+      "n_firing_jn": 20,
+      "n_firing_mite": 8,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Hydroxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Epoxidation": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC(C)C(O)C2OC2C(O)CC=CC=CCC(C(C)CCC(O)C(C)C(O)C(C)C(C)OCCO)OC(=O)C(C)=C1"
+        },
+        {
+          "rule_name": "rule_epoxide_1",
+          "source": "JN_rules",
+          "terms": "Epoxidation",
+          "smiles": "CC1=CC(C)C(O)C=CC(O)CC=CC=CCC(C(C)CCC(O)C(C)C(O)C(C)C(C)OCCO)OC(=O)C(C)=C1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0061_MITE0000242",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCOC(C)C(C)C(O)C(C)C(O)CCC(C)C1CC=CC=CCC(O)C=CC(O)C(C)C=C(C)C=C(C)C(=O)O1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC(C)C(O)C=CC(O)CC=CC=CCC(C(C)CCC(O)C(C)C(O)C(C)C(C)OCCCO)OC(=O)C(C)=C1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCOC(C)C(C)C(O)C(C)C(O)CCC(C)C1CC=CC=CCC(O)C=CC(O)C(C)C=C(C)C=C(C)C(=O)O1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCCOC(C)C(C)C(O)C(C)C(O)CCC(C)C1CC=CC=CCCC=CC(O)C(C)C=C(C)C=C(C)C(=O)O1"
+        }
+      ],
+      "best_similarity": 0.9128014842300557,
+      "best_smiles": "CCCOC(C)C(C)C(O)C(C)C(O)CCC(C)C1CC=CC=CCCC=CC(O)C(C)C=C(C)C=C(C)C(=O)O1",
+      "path_sources": {
+        "JN_rules": 4,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Decarboxylation": 2,
+        "Epoxidation": 1,
+        "Hydroxylation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Hydroxylation|Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000059",
+      "cluster_name": "Filipin",
+      "status": "ok",
+      "mature_heavy_atoms": 46,
+      "core_heavy_atoms": 44,
+      "n_firing_rules": 32,
+      "n_firing_jn": 19,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "Hydroxylation": 10,
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 2,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCCCCC(O)C1C(=O)OC(C)CC=CC=CC=CC=CC=C(C)C(O)CC(O)CC(O)CC(O)CC(O)CC(O)CC1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0063_MITE0000342",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCCCCCC1C(=O)OC(C)CC=CC=CC=CC=CC=C(C)C(O)CC(O)CC(O)CC(O)CC(O)CC(O)CC1O"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCCCCCC1C(=O)OC(C)CC=CC=CC=CC=CC=C(C)C(O)CC(O)CC(O)CC(O)CC(O)CC(O)CC1O",
+      "path_sources": {
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 1,
+        "Hydroxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000060",
+      "cluster_name": "Fostriecin",
+      "status": "ok",
+      "mature_heavy_atoms": 29,
+      "core_heavy_atoms": 26,
+      "n_firing_rules": 34,
+      "n_firing_jn": 20,
+      "n_firing_mite": 14,
+      "firing_classes": {
+        "Hydroxylation": 10,
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "N-glycosylation": 1,
+        "O-phosphorylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "CC=CC=CC=CC(O)CC(OP(=O)(O)O)C(C)(O)C=CC1CC=CC(=O)O1"
+        },
+        {
+          "rule_name": "rule_phosphate_1",
+          "source": "JN_rules",
+          "terms": "O-phosphorylation",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)(O)C=CC1CC=CC(=O)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)(O)C=CC(O)CC=CC=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)C=CC(O)CC=CC=O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0060_MITE0000188",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)C=CC(O)CC=CCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)C=CC(O)CC=CC(O)CO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)C=CC(O)CC=CC(O)C(O)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC=CC=CC=CC(O)CC(O)C(C)C=CC(O)CC=CC(O)CCO"
+        }
+      ],
+      "best_similarity": 0.7827715355805244,
+      "best_smiles": "CC=CC=CC=CC(O)CC(O)C(C)C=CC(O)CC=CC(O)CCO",
+      "path_sources": {
+        "MITE_rdchiral": 3,
+        "JN_rules": 5
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "O-phosphorylation": 1,
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Hydroxylation": 1,
+        "Decarboxylation": 2,
+        "Hydroxylation|Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000073",
+      "cluster_name": "Halstoctacosanolide",
+      "status": "ok",
+      "mature_heavy_atoms": 60,
+      "core_heavy_atoms": 58,
+      "n_firing_rules": 40,
+      "n_firing_jn": 19,
+      "n_firing_mite": 21,
+      "firing_classes": {
+        "Hydroxylation": 12,
+        "O-glycosylation": 7,
+        "Decarboxylation": 6,
+        "Hydroxylation|Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Monooxygenation": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 2,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0076_MITE0000214",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCC(O)C(C)C(O)CC(O)C(O)C=C(C)CC(C)C1CC(O)C(C)C=CC=CCC(C)C(=O)CC(O)CCC(C)C(=O)CC=C(C)C=C(C)C(O)CC=C(C)C(=O)O1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0063_MITE0000342",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCC(O)C(C)C(O)CC(O)CC=C(C)CC(C)C1CC(O)C(C)C=CC=CCC(C)C(=O)CC(O)CCC(C)C(=O)CC=C(C)C=C(C)C(O)CC=C(C)C(=O)O1"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC(O)C(C)C(O)CC(O)CC=C(C)CC(C)C1CC(O)C(C)C=CC=CCC(C)C(=O)CC(O)CCC(C)C(=O)CC=C(C)C=C(C)C(O)CC=C(C)C(=O)O1",
+      "path_sources": {
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Oxidation": 1,
+        "Hydroxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000082",
+      "cluster_name": "Kijanimicin",
+      "status": "ok",
+      "mature_heavy_atoms": 93,
+      "core_heavy_atoms": 35,
+      "n_firing_rules": 34,
+      "n_firing_jn": 22,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Hydroxylation|Monooxygenation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Methylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC1C(O)CC(OC2C(C)OC(OC3CC(OC4C(C)CC(C)C5C4C=CC4C(C)=CCC(O)C(C)=CC6C=C(CO)C(C)CC67OC(=O)C(C7=O)C(=O)C45C)OC(C)C3O)CC2OC2CC(O)C(O)C(C)O2)OC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC1C(O)CC(OC2C(C)OC(OC3CC(OC4C(C)CC(C)C5C4C=CC4C(C)=CCC(O)C(C)=CC6C=C(CO)C(C)C[C]6C(=O)C(C(=O)O)C(=O)C45C)OC(C)C3O)CC2OC2CC(O)C(O)C(C)O2)OC1C"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1=CC2C=C(CO)C(C)C[C]2C(=O)C(C(=O)O)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "CC1=CC2C=C(C)C(O)CC=C(C)C3C=CC4C(O)C(C)CC(C)C4C3(C)C(=O)C(C(=O)O)C(=O)[C]2CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1=CC2C=C(C)C(O)CC=C(C)C3C=CC4C(O)C(C)CC(C)C4C3(C)C(=O)C(C)C(=O)[C]2CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC2C=C(C)C(C)C(CO)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2C=C(C)C(C)C(C)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC2C=C(C)C(C)C(CCO)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        }
+      ],
+      "best_similarity": 0.37298091042584436,
+      "best_smiles": "CC1=CC2C=C(C)C(C)C(CCO)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 3,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Oxidation": 1,
+        "Decarboxylation": 2,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000084",
+      "cluster_name": "Laidlomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 49,
+      "core_heavy_atoms": 40,
+      "n_firing_rules": 36,
+      "n_firing_jn": 20,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 5,
+        "Hydroxylation|Oxidation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(=O)OC(C(C)C(=O)O)C(C)C1OC2(CCC(C)(C3CCC(C)(C4OC(CC(C)CC(C)C(O)CO)CC4C)O3)O2)CC(O)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(=O)OC(C(C)C(=O)O)C(C)C1OC2(CCC(C)(CCCC(C)C3OC(CC(C)CC(C)C(O)CO)CC3C)O2)CC(O)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(=O)OC(C(C)C(=O)O)C(C)C1OC(CCC(C)CCCC(C)C2OC(CC(C)CC(C)C(O)CO)CC2C)CC(O)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(=O)OC(C(C)C=O)C(C)C1OC(CCC(C)CCCC(C)C2OC(CC(C)CC(C)C(O)CO)CC2C)CC(O)C1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(CCCC(C)C1OC(CC(C)CC(C)C(O)CO)CC1C)CCC1CC(O)C(C)C(C(C)C(O)C(C)C=O)O1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(CCCC(C)C1OC(CC(C)CC(C)C(O)CO)CC1C)CCC1CC(O)C(C)C(C(C)C(O)C(C)C(=O)CO)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(CCCC(C)CC(C)CCCC(C)CC(C)C(O)CO)CCC1CC(O)C(C)C(C(C)C(O)C(C)C(=O)CO)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)CCCC(C)CC(C)CCCC(C)CC(C)C(O)CO"
+        }
+      ],
+      "best_similarity": 0.4166666666666667,
+      "best_smiles": "CC(CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)CCCC(C)CC(C)CCCC(C)CC(C)C(O)CO",
+      "path_sources": {
+        "JN_rules": 8
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 5,
+        "O-glycosylation": 2,
+        "Decarboxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000085",
+      "cluster_name": "Lankamycin",
+      "status": "ok",
+      "mature_heavy_atoms": 58,
+      "core_heavy_atoms": 30,
+      "n_firing_rules": 31,
+      "n_firing_jn": 21,
+      "n_firing_mite": 10,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 4,
+        "Hydroxylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Acetylation": 1,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 5,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC1(C)CC(OC2C(C)C(=O)OC(C(C)C(C)O)C(C)C(OC(C)=O)C(C)C(=O)C(C)(O)CC(C)C(O)C2C)OC(C)C1OC(C)=O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(=O)OC1C(C)C(=O)C(C)(O)CC(C)C(O)C(C)C(O)C(C)C(=O)OC(C(C)C(C)O)C1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(O)C(C)C1OC(=O)C(C)C(O)C(C)C(O)C(C)CC(C)(O)C(=O)C(C)C(O)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC(C)C(O)C(C)C(O)C(C)C(=O)OC(C(C)C(C)O)C(C)C(O)C(C)C1=O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(CC(C)C(O)C(C)C(O)C(C)C(=O)O)C(=O)C(C)C(O)C(C)[CH]C(C)C(C)O"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CC(CC(C)C(O)C(C)C(O)C(C)C(=O)O)C(=O)C(C)C(O)C(C)[CH]C(C)C(C)O",
+      "path_sources": {
+        "JN_rules": 5
+      },
+      "path_classes": {
+        "O-glycosylation": 4,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000086",
+      "cluster_name": "Lasalocid",
+      "status": "ok",
+      "mature_heavy_atoms": 43,
+      "core_heavy_atoms": 42,
+      "n_firing_rules": 34,
+      "n_firing_jn": 20,
+      "n_firing_mite": 14,
+      "firing_classes": {
+        "Decarboxylation": 7,
+        "O-glycosylation": 7,
+        "Hydroxylation": 6,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Hydroxylation|Monooxygenation": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1(O)CCC(C2(CC)CC(C)C(C(CCCO)C(=O)C(C)C(O)C(C)CCc3ccc(C)c(O)c3C(=O)[O-])O2)OC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1(CCCC(O)(CC)C(C)O)CC(C)C(C(CCCO)C(=O)C(C)C(O)C(C)CCc2ccc(C)c(O)c2C(=O)[O-])O1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0002_MITE0000008",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Monooxygenation",
+          "smiles": "CCC1(CCCC(O)(CC)C(C)O)CC(C)C(C(CCCO)C(=O)C(C)C(O)C(C)CCc2ccc(C)cc2C(=O)[O-])O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1(CCCC(O)(CC)C(C)O)CC(C)C(C(CCCO)C(=O)C(C)C(O)C(C)CCc2ccc(C)cc2C=O)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(CCCC(O)(CC)C(C)O)CC(C)C(O)C(CCCO)C(=O)C(C)C(O)C(C)CCc1ccc(C)cc1C=O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(CCCC(O)(CC)C(C)O)CC(C)C(O)C(CCCO)C(=O)C(C)CC(C)CCc1ccc(C)cc1C=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC(CC)C(C)O)CC(C)C(O)C(CCCO)C(=O)C(C)CC(C)CCc1ccc(C)cc1C=O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0005_MITE0000015",
+          "source": "MITE_rdchiral",
+          "terms": "Methylation",
+          "smiles": "CCC(CCCC(CC)C(C)O)CC(C)C(O)C(CCCO)C(=O)C(C)CC(C)CCc1ccccc1C=O"
+        }
+      ],
+      "best_similarity": 0.3752310536044362,
+      "best_smiles": "CCC(CCCC(CC)C(C)O)CC(C)C(O)C(CCCO)C(=O)C(C)CC(C)CCc1ccccc1C=O",
+      "path_sources": {
+        "JN_rules": 5,
+        "MITE_rdchiral": 3
+      },
+      "path_classes": {
+        "Decarboxylation": 1,
+        "O-glycosylation": 2,
+        "Hydroxylation|Monooxygenation": 1,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 1,
+        "Methylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000092",
+      "cluster_name": "Megalomicin",
+      "status": "ok",
+      "mature_heavy_atoms": 61,
+      "core_heavy_atoms": 27,
+      "n_firing_rules": 32,
+      "n_firing_jn": 23,
+      "n_firing_mite": 9,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Oxidation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 4,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)C(C)C(O)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)(OC2CC(N(C)C)C(O)C(C)O2)CC(C)C(=O)C(C)C(O)C1(C)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1OC(=O)C(C)C(O)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)CC(C)C(=O)C(C)C(O)C1(C)O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)C(C)C(O)C(C)C(O)C(C)CC(C)C(=O)C(C)C(O)C1(C)O"
+        },
+        {
+          "rule_name": "rule_p450_tert",
+          "source": "JN_rules",
+          "terms": "C-hydroxylation (P450 reverse)",
+          "smiles": "CCC1OC(=O)C(C)C(O)C(C)C(O)C(C)CC(C)C(=O)C(C)C(O)C1C"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC1OC(=O)C(C)C(O)C(C)C(O)C(C)CC(C)C(=O)C(C)C(O)C1C",
+      "path_sources": {
+        "JN_rules": 4
+      },
+      "path_classes": {
+        "O-glycosylation": 2,
+        "Hydroxylation-like oxygen insertion": 1,
+        "C-hydroxylation (P450 reverse)": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000093",
+      "cluster_name": "Meilingmycin",
+      "status": "ok",
+      "mature_heavy_atoms": 45,
+      "core_heavy_atoms": 39,
+      "n_firing_rules": 34,
+      "n_firing_jn": 21,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 4,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Heterocyclization": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(C)=CC(=O)OCC1=CC(C=O)C2(O)C(=CC=CC(C)CC(C)=CCC3CC(O)CC4(CCC(C)C(C)O4)O3)COC2C1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(C)=CC(=O)OCC1=CC(C=O)C(O)(C(C)=CC=CC(C)CC(C)=CCC2CC(O)CC3(CCC(C)C(C)O3)O2)CC1O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(C)=CC(=O)OCC1=CC(C=O)C(O)(C(C)=CC=CC(C)CC(C)=CCC(O)CC(C)O)CC1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0152_MITE0000388",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC(C)=CC(=O)OCC1=CC(C=O)C(C(C)=CC=CC(C)CC(C)=CCC(O)CC(C)O)CC1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(C)=CC(=O)OCC1=CC(C(=O)CO)C(C(C)=CC=CC(C)CC(C)=CCC(O)CC(C)O)CC1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(=CCC(O)CC(C)O)CC(C)C=CC=C(C)C1CC(O)C(C)=CC1C(=O)CO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(=CCC(O)CC(C)O)CC(C)C=CC=C(C)C1CC(O)C(C)=CC1C(=O)C(O)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC(=CCC(O)CC(C)O)CC(C)C=CC=C(C)C1CC(O)C(C)=CC1C(=O)CCO"
+        }
+      ],
+      "best_similarity": 0.5719298245614035,
+      "best_smiles": "CC(=CCC(O)CC(C)O)CC(C)C=CC=C(C)C1CC(O)C(C)=CC1C(=O)CCO",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 1,
+        "Decarboxylation": 2,
+        "Hydroxylation|Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000094",
+      "cluster_name": "Methymycin / pikromycin",
+      "status": "ok",
+      "mature_heavy_atoms": 33,
+      "core_heavy_atoms": 25,
+      "n_firing_rules": 33,
+      "n_firing_jn": 23,
+      "n_firing_mite": 10,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 5,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1OC(=O)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]C(O)C(CC(C)O)N(C)C)C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]CC(CC(C)O)N(C)C)C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "rule0163_2",
+          "source": "JN_rules",
+          "terms": "N-glycosylation",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]CC(O)CC(C)O)C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]CC(O)CC(C)=O)C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]CC(O)CC(=O)CCO)C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0157_MITE0000163",
+          "source": "MITE_rdchiral",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]CC(O)CC(=O)C(CO)C(=O)[O-])C(C)CC(C)C(=O)C=CC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1OC(=O)C(C)C(O[CH]CC(O)CC(=O)C(C)C(=O)[O-])C(C)CC(C)C(=O)C=CC1C"
+        }
+      ],
+      "best_similarity": 0.8236363636363636,
+      "best_smiles": "CCC1OC(=O)C(C)C(O[CH]CC(O)CC(=O)C(C)C(=O)[O-])C(C)CC(C)C(=O)C=CC1C",
+      "path_sources": {
+        "JN_rules": 5,
+        "MITE_rdchiral": 3
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "O-glycosylation": 1,
+        "Hydroxylation|Oxidation": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1,
+        "Decarboxylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000100",
+      "cluster_name": "Monensin",
+      "status": "ok",
+      "mature_heavy_atoms": 47,
+      "core_heavy_atoms": 42,
+      "n_firing_rules": 36,
+      "n_firing_jn": 20,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1(C2OC(CC(C)CC(C)C(O)CO)CC2C)CCC(C2(C)CCC3(CC(O)C(C)C(C(C)C(OC)C(C)C(=O)O)O3)O2)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1(C2OC(CC(C)CC(C)C(O)CO)CC2C)CCC(C(C)CCC2CC(O)C(C)C(C(C)C(OC)C(C)C(=O)O)O2)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1(C2OC(CC(C)CC(C)C(O)CO)CC2C)CCC(C(C)CCC2CC(O)C(C)C(C(C)C(OC)C(C)C=O)O2)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1(CC(C)CCCC(C)CC(C)C(O)CO)CCC(C(C)CCC2CC(O)C(C)C(C(C)C(OC)C(C)C=O)O2)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC(C)CCC1CC(O)C(C)C(C(C)C(OC)C(C)C=O)O1)CC(C)CCCC(C)CC(C)C(O)CO"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(OC)C(C)C=O)CC(C)CCCC(C)CC(C)C(O)CO"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(O)C(C)C=O)CC(C)CCCC(C)CC(C)C(O)CO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)CC(C)CCCC(C)CC(C)C(O)CO"
+        }
+      ],
+      "best_similarity": 0.4639423076923077,
+      "best_smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)CC(C)CCCC(C)CC(C)C(O)CO",
+      "path_sources": {
+        "JN_rules": 8
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 5,
+        "O-glycosylation": 2,
+        "Decarboxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000102",
+      "cluster_name": "Mycinamicin",
+      "status": "ok",
+      "mature_heavy_atoms": 50,
+      "core_heavy_atoms": 25,
+      "n_firing_rules": 33,
+      "n_firing_jn": 23,
+      "n_firing_mite": 10,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 4,
+        "Hydroxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Epoxidation": 1,
+        "Methylation": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 3,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)C=CC(C)C(O)C(C)CC(C)C(=O)C=CC2OC2C1COC1OC(C)C(O)C(OC)C1OC"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1OC(=O)C=CC(C)C(O)C(C)CC(C)C(=O)C=CC2OC2C1C"
+        },
+        {
+          "rule_name": "rule_epoxide_1",
+          "source": "JN_rules",
+          "terms": "Epoxidation",
+          "smiles": "CCC1OC(=O)C=CC(C)C(O)C(C)CC(C)C(=O)C=CC=CC1C"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC1OC(=O)C=CC(C)C(O)C(C)CC(C)C(=O)C=CC=CC1C",
+      "path_sources": {
+        "JN_rules": 3
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Epoxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000103",
+      "cluster_name": "Mycolactone",
+      "status": "ok",
+      "mature_heavy_atoms": 53,
+      "core_heavy_atoms": 31,
+      "n_firing_rules": 32,
+      "n_firing_jn": 19,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "Hydroxylation": 7,
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Reduction": 2,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 2,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(=CC=CC(C)=CC(O)C(O)CC(C)O)C=C(C)C=CC(=O)OC(CCCC=O)C(C)CC(C)=CCC(O)C(C)CC(C)=CC(C)C(O)CC(C)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(=CC(C)C(O)CC(C)O)CC(C)C(O)CC=C(C)CC(C)C(O)CCCC=O"
+        }
+      ],
+      "best_similarity": 0.8923076923076924,
+      "best_smiles": "CC(=CC(C)C(O)CC(C)O)CC(C)C(O)CC=C(C)CC(C)C(O)CCCC=O",
+      "path_sources": {
+        "JN_rules": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000105",
+      "cluster_name": "Nanchangmycin",
+      "status": "ok",
+      "mature_heavy_atoms": 61,
+      "core_heavy_atoms": 41,
+      "n_firing_rules": 37,
+      "n_firing_jn": 20,
+      "n_firing_mite": 17,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 4,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "Methylation": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(=CC(C)C1OC2(CCC(C)(C3CCC(C)C4(OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)O2)CC(O)C1C)C(=O)C(C)CC(C)C(=O)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C](CCC1CC(O)C(C)C(C(C)C=C(C)C(=O)C(C)CC(C)C(=O)O)O1)C1CCC(C)C2(O1)OC(C1OC(O)(CO)C(C)CC1C)CC2C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C](CCC1CC(O)C(C)C(C(C)C=C(C)C(=O)C(C)CC(C)C(=O)O)O1)C1CCC(C)C(C(C)C[CH]C2OC(O)(CO)C(C)CC2C)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C](CCC1CC(O)C(C)C(C(C)C=C(C)C(=O)C(C)CC(C)C(=O)O)O1)C1CCC(C)C(C(C)C[CH][CH]C(C)CC(C)C(O)CO)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "C[C](CCCCC(O)C(C)C(O)C(C)C=C(C)C(=O)C(C)CC(C)C(=O)O)C1CCC(C)C(C(C)C[CH][CH]C(C)CC(C)C(O)CO)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C]([CH]CCC(C)CC(C)C[CH][CH]C(C)CC(C)C(O)CO)CCCCC(O)C(C)C(O)C(C)C=C(C)C(=O)C(C)CC(C)C(=O)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C]([CH]CCC(C)CC(C)C[CH][CH]C(C)CC(C)C(O)CO)CCCCC(O)C(C)C(O)C(C)C=C(C)C(=O)C(C)CC(C)C=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C]([CH]CCC(C)CC(C)C[CH][CH]C(C)CC(C)C(C)O)CCCCC(O)C(C)C(O)C(C)C=C(C)C(=O)C(C)CC(C)C=O"
+        }
+      ],
+      "best_similarity": 0.6875,
+      "best_smiles": "C[C]([CH]CCC(C)CC(C)C[CH][CH]C(C)CC(C)C(C)O)CCCCC(O)C(C)C(O)C(C)C=C(C)C(=O)C(C)CC(C)C=O",
+      "path_sources": {
+        "JN_rules": 8
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 7,
+        "O-glycosylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000108",
+      "cluster_name": "Natamycin / Pimaricin",
+      "status": "ok",
+      "mature_heavy_atoms": 47,
+      "core_heavy_atoms": 34,
+      "n_firing_rules": 35,
+      "n_firing_jn": 23,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 4,
+        "Hydroxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydrolysis": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Epoxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule_epoxide_1",
+          "source": "JN_rules",
+          "terms": "Epoxidation",
+          "smiles": "CC1CC=CC=CC=CC=CC(OC2OC(C)C(O)C(N)C2O)CC2OC(O)(CC(O)CC=CC=CC(=O)O1)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1CC=CC=CC=CC=CC(O)CC2OC(O)(CC(O)CC=CC=CC(=O)O1)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1CC=CC=CC=CC=CC(O)CC(O)C(C(=O)O)C(O)C[C](O)CC(O)CC=CC=CC(=O)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC=CC=CC=CC=CC(O)CC(O)C(C=O)C(O)C[C](O)CC(O)CC=CC=CC(=O)O1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1CC=CC=CC=CC=CC(O)CC(O)C(C(=O)CO)C(O)C[C](O)CC(O)CC=CC=CC(=O)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC=CC=CC=CC=CC(O)CC(O)C(C(=O)CO)C(O)CCCC(O)CC=CC=CC(=O)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(=O)C1C(O)CCCC(O)CC=CC=CC(=O)OC(C)CC=CC=CC=CC=CC(O)CC1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1CC=CC=CC=CC=CC(O)CC(O)C(C(=O)CCO)C(O)CCCC(O)CC=CC=CC(=O)O1"
+        }
+      ],
+      "best_similarity": 0.8782816229116945,
+      "best_smiles": "CC1CC=CC=CC=CC=CC(O)CC(O)C(C(=O)CCO)C(O)CCCC(O)CC=CC=CC(=O)O1",
+      "path_sources": {
+        "JN_rules": 8
+      },
+      "path_classes": {
+        "Epoxidation": 1,
+        "O-glycosylation": 2,
+        "Hydroxylation-like oxygen insertion": 3,
+        "Decarboxylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000109",
+      "cluster_name": "Nemadectin",
+      "status": "ok",
+      "mature_heavy_atoms": 44,
+      "core_heavy_atoms": 45,
+      "n_firing_rules": 34,
+      "n_firing_jn": 21,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 4,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Heterocyclization": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CCC2CC(CC3(CC(O)C(C)C(C(C)=CC(C)C)O3)O2)OC(=O)C2C=C(C)C(O)[CH]C2(O)C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1=CCC2CC(C[C](CC(O)C(C)C(O)C(C)=CC(C)C)O2)OC(=O)C2C=C(C)C(O)[CH]C2(O)C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CCC2CC(C[C](C(CO)C(O)C(C)C(O)C(C)=CC(C)C)O2)OC(=O)C2C=C(C)C(O)[CH]C2(O)C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0152_MITE0000388",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1=CCC2CC(C[C](C(CO)C(O)C(C)C(O)C(C)=CC(C)C)O2)OC(=O)C2C=C(C)C(O)[CH]C2C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1=CCC(O)CC(C[C]C(CO)C(O)C(C)C(O)C(C)=CC(C)C)OC(=O)C2C=C(C)C(O)[CH]C2C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CCC(O)C(CO)C(C[C]C(CO)C(O)C(C)C(O)C(C)=CC(C)C)OC(=O)C2C=C(C)C(O)[CH]C2C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CCC(O)C(CO)C(C[C]C(C)C(O)C(C)C(O)C(C)=CC(C)C)OC(=O)C2C=C(C)C(O)[CH]C2C(C)=CC=CC(C)C1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CCC(O)C(C)C(C[C]C(C)C(O)C(C)C(O)C(C)=CC(C)C)OC(=O)C2C=C(C)C(O)[CH]C2C(C)=CC=CC(C)C1"
+        }
+      ],
+      "best_similarity": 0.6671270718232044,
+      "best_smiles": "CC1=CCC(O)C(C)C(C[C]C(C)C(O)C(C)C(O)C(C)=CC(C)C)OC(=O)C2C=C(C)C(O)[CH]C2C(C)=CC=CC(C)C1",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 3,
+        "O-glycosylation": 2,
+        "Decarboxylation": 2,
+        "Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000113",
+      "cluster_name": "Niddamycin",
+      "status": "ok",
+      "mature_heavy_atoms": 55,
+      "core_heavy_atoms": 27,
+      "n_firing_rules": 37,
+      "n_firing_jn": 23,
+      "n_firing_mite": 14,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 5,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Methylation": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 2,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCC=CC=CC(=O)C(C)CC(CC=O)C(OC1OC(C)C(OC2CC(C)(O)C(OC(=O)CC(C)C)C(C)O2)C(N(C)C)C1O)C(OC)C(O)CC(=O)O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCC=CC=CC(=O)C(C)CC(CC=O)C(O)C(OC)C(O)CC(=O)O"
+        }
+      ],
+      "best_similarity": 0.9441747572815534,
+      "best_smiles": "CCCC=CC=CC(=O)C(C)CC(CC=O)C(O)C(OC)C(O)CC(=O)O",
+      "path_sources": {
+        "JN_rules": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000114",
+      "cluster_name": "Nigericin",
+      "status": "ok",
+      "mature_heavy_atoms": 51,
+      "core_heavy_atoms": 47,
+      "n_firing_rules": 33,
+      "n_firing_jn": 20,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 5,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(CC2CCC(C)C(C(C)C=O)O2)OC2(OC(C)(C3CCC(C)(C4OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)CC2C)C1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC1CC(CC2CCC(C)C(C(C)C(=O)CO)O2)OC2(OC(C)(C3CCC(C)(C4OC(C5OC(O)(CO)C(C)CC5C)CC4C)O3)CC2C)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(CC2CCC(C)C(C(C)C(=O)CO)O2)OC(C(C)C[C](C)C2CCC(C)(C3OC(C4OC(O)(CO)C(C)CC4C)CC3C)O2)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(CC2CCC(C)C(C(C)C(=O)CO)O2)OC(C(C)C[C](C)[CH]CCC(C)C2OC(C3OC(O)(CO)C(C)CC3C)CC2C)C1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC1CC(CC2CCC(C)C(C(C)C(=O)CO)O2)OC(C(C)C[C](C)[CH]CCC(C)C2OC([CH]C(C)CC(C)C(O)CO)CC2C)C1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(CC(O)CC1CCC(C)C(C(C)C(=O)CO)O1)C(C)CC(C)C[C](C)[CH]CCC(C)C1OC([CH]C(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(CC(O)C[CH]CCC(C)C(O)C(C)C(=O)CO)C(C)CC(C)C[C](C)[CH]CCC(C)C1OC([CH]C(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC(CC(O)C[CH]CCC(C)C(O)C(C)C(=O)C(O)CO)C(C)CC(C)C[C](C)[CH]CCC(C)C1OC([CH]C(C)CC(C)C(O)CO)CC1C"
+        }
+      ],
+      "best_similarity": 0.375,
+      "best_smiles": "COC(CC(O)C[CH]CCC(C)C(O)C(C)C(=O)C(O)CO)C(C)CC(C)C[C](C)[CH]CCC(C)C1OC([CH]C(C)CC(C)C(O)CO)CC1C",
+      "path_sources": {
+        "JN_rules": 8
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 4,
+        "Decarboxylation": 2,
+        "O-glycosylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000115",
+      "cluster_name": "Nystatin",
+      "status": "ok",
+      "mature_heavy_atoms": 65,
+      "core_heavy_atoms": 52,
+      "n_firing_rules": 37,
+      "n_firing_jn": 22,
+      "n_firing_mite": 15,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Hydroxylation": 5,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydrolysis": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Other": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 7,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(OC2OC(C)C(O)C(N)C2O)CC2OC(O)(CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC2OC(O)(CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C(=O)O)C(O)C[C](O)CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCCCCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCC(CO)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC[C](O)CC(O)C(C)C(O)CC(O)C=CC=CC=CC=CCCC=CC=CC(C)C(O)C(C)C(C)OC(=O)CC(O)CC(O)CC(O)CC1"
+        }
+      ],
+      "best_similarity": 0.9354838709677419,
+      "best_smiles": "CC1CC[C](O)CC(O)C(C)C(O)CC(O)C=CC=CC=CC=CCCC=CC=CC(C)C(O)C(C)C(C)OC(=O)CC(O)CC(O)CC(O)CC1",
+      "path_sources": {
+        "MITE_rdchiral": 3,
+        "JN_rules": 4
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 2,
+        "O-glycosylation": 2,
+        "Oxidation": 1,
+        "Decarboxylation": 1,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000116",
+      "cluster_name": "Nystatin-like Pseudonocardia polyene",
+      "status": "ok",
+      "mature_heavy_atoms": 65,
+      "core_heavy_atoms": 52,
+      "n_firing_rules": 37,
+      "n_firing_jn": 22,
+      "n_firing_mite": 15,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Hydroxylation": 5,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydrolysis": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Other": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 7,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(OC2OC(C)C(O)C(N)C2O)CC2OC(O)(CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC2OC(O)(CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C(=O)O)C(O)C[C](O)CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCCCCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCC(CO)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC[C](O)CC(O)C(C)C(O)CC(O)C=CC=CC=CC=CCCC=CC=CC(C)C(O)C(C)C(C)OC(=O)CC(O)CC(O)CC(O)CC1"
+        }
+      ],
+      "best_similarity": 0.9354838709677419,
+      "best_smiles": "CC1CC[C](O)CC(O)C(C)C(O)CC(O)C=CC=CC=CC=CCCC=CC=CC(C)C(O)C(C)C(C)OC(=O)CC(O)CC(O)CC(O)CC1",
+      "path_sources": {
+        "MITE_rdchiral": 3,
+        "JN_rules": 4
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 2,
+        "O-glycosylation": 2,
+        "Oxidation": 1,
+        "Decarboxylation": 1,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000117",
+      "cluster_name": "Oligomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 56,
+      "core_heavy_atoms": 56,
+      "n_firing_rules": 33,
+      "n_firing_jn": 21,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1C=CC=CCC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)C=CC(=O)OC2C(C)C(CC1)OC1(CCC(C)C(CC(C)O)O1)C2C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1C=CC=CCC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)C=CC(=O)OC(C(C)[C]2CCC(C)C(CC(C)O)O2)C(C)C(O)CC1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCCC1O[C](C(C)C2OC(=O)C=CC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)CC=CC=CC(CC)CCC(O)C2C)CCC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCC(O)C(C)CC[C]C(C)C1OC(=O)C=CC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)CC=CC=CC(CC)CCC(O)C1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1C=CC=CCC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)C=CC(=O)OC(C(C)[C]CCC(C)C(O)CCCCO)C(C)C(O)CC1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCCC(O)C(C)CC[C]C(C)C1OC(=O)C=CC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)CC=CC=CC(CC)CCC(O)C1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1C=CC=CCC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)C=CC(=O)OC(C(C)[C]CCC(C)C(O)CCCCCO)C(C)C(O)CC1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCCCC(O)C(C)CC[C]C(C)C1OC(=O)C=CC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)CC=CC=CC(CC)CCC(O)C1C"
+        }
+      ],
+      "best_similarity": 0.9437148217636022,
+      "best_smiles": "CCCCCC(O)C(C)CC[C]C(C)C1OC(=O)C=CC(C)C(O)C(C)C(=O)C(C)C(O)C(C)C(=O)C(C)C(O)C(C)CC=CC=CC(CC)CCC(O)C1C",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 3,
+        "O-glycosylation": 2,
+        "Hydroxylation|Oxidation": 1,
+        "Decarboxylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000123",
+      "cluster_name": "Phoslactomycin B",
+      "status": "ok",
+      "mature_heavy_atoms": 29,
+      "core_heavy_atoms": 31,
+      "n_firing_rules": 30,
+      "n_firing_jn": 19,
+      "n_firing_mite": 11,
+      "firing_classes": {
+        "Hydroxylation": 8,
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(C=CC=O)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0057_MITE0000064",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC=CC(CC)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=CC(CCCO)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=CC(CCC(O)CO)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=CC(CCC(C)O)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CC=CC(CCC(C)=O)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1"
+        }
+      ],
+      "best_similarity": 0.7657142857142857,
+      "best_smiles": "CC=CC(CCC(C)=O)C(O)C=CC(CC)C(O)CC(O)C=CC=CC1CCCCC1",
+      "path_sources": {
+        "JN_rules": 4,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Oxidation": 1,
+        "Decarboxylation": 2,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Reduction": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000126",
+      "cluster_name": "Pladienolide",
+      "status": "ok",
+      "mature_heavy_atoms": 38,
+      "core_heavy_atoms": 33,
+      "n_firing_rules": 33,
+      "n_firing_jn": 21,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Hydroxylation": 6,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Acetylation": 1,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Epoxidation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(=O)OC1C=CC(C)C(C(C)=CC=CC(C)CC2OC2C(C)C(O)CCCO)OC(=O)CC(O)CCC1(C)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0035_MITE0000183",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CC(=O)OC1C=CC(C)C(C(C)=CC=CC(C)CC2OC2C(C)C(O)CCCO)OC(=O)CC(O)CCC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(=O)OC1C=CC(C)C(C(C)=CC=CC(C)CC[CH]C(C)C(O)CCCO)OC(=O)CC(O)CCC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(=CC=CC(C)CC[CH]C(C)C(O)CCCO)C1OC(=O)CC(O)CCC(C)C(O)C=CC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCC(O)C(C)[CH]CCC(C)C=CC=C(C)C1OC(=O)CC(O)CCC(C)C(O)C=CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCCCC(C)[CH]CCC(C)C=CC=C(C)C1OC(=O)CC(O)CCC(C)C(O)C=CC1C"
+        }
+      ],
+      "best_similarity": 0.8617886178861789,
+      "best_smiles": "CCCCC(C)[CH]CCC(C)C=CC=C(C)C1OC(=O)CC(O)CCC(C)C(O)C=CC1C",
+      "path_sources": {
+        "JN_rules": 4,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Decarboxylation": 1,
+        "Hydroxylation": 1,
+        "Hydroxylation-like oxygen insertion": 2,
+        "O-glycosylation": 1,
+        "Hydroxylation|Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000133",
+      "cluster_name": "Quartromicin",
+      "status": "ok",
+      "mature_heavy_atoms": 107,
+      "core_heavy_atoms": 18,
+      "n_firing_rules": 37,
+      "n_firing_jn": 20,
+      "n_firing_mite": 17,
+      "firing_classes": {
+        "Hydroxylation": 12,
+        "O-glycosylation": 8,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2(C)C=CC=C(C)C(O)C3C(=O)C4(CC(C)C(C=O)=CC4(C)C=CC(O)C4C(=O)C5(CC(C)C(COC6OC(CO)C(O)C(O)C6O)=CC5C=CC=C(C)C(O)C5C(=O)C6(CC(C)C(C=O)=CC6(C)C=CC(O)C6C(=O)C2(CC1C)OC6O)OC5O)OC4O)OC3O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC2(C)C=C(CO)C=C(C)C(O)C3C(=O)C4(CC(C)C(C=O)=CC4(C)C=CC(O)C4C(=O)C5(CC(C)C(COC6OC(CO)C(O)C(O)C6O)=CC5C=CC=C(C)C(O)C5C(=O)C6(CC(C)C(C=O)=CC6(C)C=CC(O)C6C(=O)C2(CC1C)OC6O)OC5O)OC4O)OC3O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1=CC2(C)C=C(CO)C=C(C)C(O)C3C(=O)C4(CC(C)C(C=O)=CC4(C)C=CC(O)C4C(=O)C5(CC(C)C(CO)=CC5C=CC=C(C)C(O)C5C(=O)C6(CC(C)C(C=O)=CC6(C)C=CC(O)C6C(=O)C2(CC1C)OC6O)OC5O)OC4O)OC3O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "CC1=CC2C=CC=C(C)C(O)C3C(=O)C4(CC(C)C(C=O)=CC4(C)C=CC(O)C4C(=O)C5(CC(C)C(C)=CC5(C)C=C(CO)C=C(C)C(O)C5C(=O)C6(CC(C)C(C=O)=CC6(C)C=CC(O)C6C(=O)C2(CC1C)OC6O)OC5O)OC4O)OC3O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2C=CC=C(C)C(O)C3C(=O)C4(CC(C)C(C=O)=CC4(C)C=CC(O)C4C(=O)C5(CC(C)C(C)=CC5(C)C=C(CO)C=C(C)C(O)C(CO)C(=O)C5CC(C)C(C=O)=CC5(C)C=CC(O)C5C(=O)C2(CC1C)OC5O)OC4O)OC3O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1=CC2C=CC=C(C)C(O)C(C(O)O)C(=O)C3CC(C)C(C=O)=CC3(C)C=CC(O)C3C(=O)C4(CC(C)C(C)=CC4(C)C=C(CO)C=C(C)C(O)C(CO)C(=O)C4CC(C)C(C=O)=CC4(C)C=CC(O)C4C(=O)C2(CC1C)OC4O)OC3O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2(C)C=C(CO)C=C(C)C(O)C(CO)C(=O)C3CC(C)C(C=O)=CC3(C)C=CC(O)C3C(=O)C4(CC(C)C(C)=CC4C=CC=C(C)C(O)C(C(O)O)C(=O)C4CC(C)C(C=O)=CC4(C)C=CC(O)C(CO)C(=O)C2CC1C)OC3O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2C=CC=C(C)C(O)C(C(O)O)C(=O)C3CC(C)C(C=O)=CC3(C)C=CC(O)C(CO)C(=O)C3CC(C)C(C)=CC3(C)C=C(CO)C=C(C)C(O)C(CO)C(=O)C3CC(C)C(C=O)=CC3(C)C=CC(O)C(CO)C(=O)C2CC1C"
+        }
+      ],
+      "best_similarity": 0.18930041152263374,
+      "best_smiles": "CC1=CC2C=CC=C(C)C(O)C(C(O)O)C(=O)C3CC(C)C(C=O)=CC3(C)C=CC(O)C(CO)C(=O)C3CC(C)C(C)=CC3(C)C=C(CO)C=C(C)C(O)C(CO)C(=O)C3CC(C)C(C=O)=CC3(C)C=CC(O)C(CO)C(=O)C2CC1C",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 4,
+        "Decarboxylation": 1,
+        "O-glycosylation": 2,
+        "Hydroxylation|Oxidation|Monooxygenation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000135",
+      "cluster_name": "Reveromycin",
+      "status": "ok",
+      "mature_heavy_atoms": 47,
+      "core_heavy_atoms": 42,
+      "n_firing_rules": 37,
+      "n_firing_jn": 20,
+      "n_firing_mite": 17,
+      "firing_classes": {
+        "Hydroxylation": 8,
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 7,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCCC(CC[C]1CCC(C)C(CC=C(C)C=CC(O)C(C)C=CC(=O)O)O1)(OC(=O)CCC(=O)O)C(O)C=CC(C)=CC(=O)O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCCC(CC[C]1CCC(C)C(CC=C(C)C=CC(O)C(C)C=CC(=O)O)O1)C(O)C=CC(C)=CC(=O)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCCC(CC[C](O)CCC(C)[CH]CC=C(C)C=CC(O)C(C)C=CC(=O)O)C(O)C=CC(C)=CC(=O)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC=C(C)C=CC(O)C(CCCC)CC[C](O)CCC(C)[CH]CC=C(C)C=CC(O)C(C)C=CC(=O)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCCCC(CC[C](O)CCC(C)[CH]CC=C(C)C=CC(O)C(C)C=CC(=O)O)C(O)C=CC(C)=CCCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCCCC(CC[C](O)CCC(C)[CH]CC=C(C)C=CC(O)C(C)C=CC(=O)O)C(O)C=CC(C)=CCC(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCCC(CC[C](O)CCC(C)[CH]CC=C(C)C=CC(O)C(C)C=CC(=O)O)C(O)C=CC(C)=CCC(C)O"
+        }
+      ],
+      "best_similarity": 0.9933110367892977,
+      "best_smiles": "CCCCC(CC[C](O)CCC(C)[CH]CC=C(C)C=CC(O)C(C)C=CC(=O)O)C(O)C=CC(C)=CCC(C)O",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 1,
+        "Decarboxylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000144",
+      "cluster_name": "Salinomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 53,
+      "core_heavy_atoms": 52,
+      "n_firing_rules": 37,
+      "n_firing_jn": 21,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "Hydroxylation": 9,
+        "O-glycosylation": 8,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Carboxylation": 1,
+        "Dehydration|Other": 1,
+        "Hydrolysis": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(C(=O)O)C1CCC(C)C(C(C)C(O)C(C)C(=O)C(CC)C2OC3(C=CCC4(CCC(C)(C5CCC(O)(CC)C(C)O5)O4)O3)C(C)CC2C)O1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0221_MITE0000441",
+          "source": "MITE_rdchiral",
+          "terms": "Dehydration|Other",
+          "smiles": "[CH2]C(O)C=C1OC(C(CC)C(=O)C(C)C(O)C(C)C2OC(C(CC)C(=O)O)CCC2C)C(C)CC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "[CH2]C(O)C=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C1OC(C(CC)C(=O)O)CCC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "[CH2]C(O)C=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C(O)C(C)CCCC(CC)C(=O)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "[CH2]CC=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C(O)C(C)CCCC(CC)C(=O)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "[CH2]CC(=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C(O)C(C)CCCC(CC)C(=O)O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "[CH2]CC(=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C(O)C(C)CCCC(C=O)CC)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "[CH2]CC(C)=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C(O)C(C)CCCC(C=O)CC"
+        }
+      ],
+      "best_similarity": 0.656641604010025,
+      "best_smiles": "[CH2]CC(C)=[C]C(C)CC(C)C(O)C(CC)C(=O)C(C)C(O)C(C)C(O)C(C)CCCC(C=O)CC",
+      "path_sources": {
+        "MITE_rdchiral": 4,
+        "JN_rules": 4
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 2,
+        "Dehydration|Other": 1,
+        "O-glycosylation": 2,
+        "Decarboxylation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000148",
+      "cluster_name": "Spinosad",
+      "status": "ok",
+      "mature_heavy_atoms": 52,
+      "core_heavy_atoms": 31,
+      "n_firing_rules": 28,
+      "n_firing_jn": 22,
+      "n_firing_mite": 6,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Methylation": 1,
+        "Monooxygenation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 7,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCNC1CCC(OC2CCCC(CC)OC(=O)CC3C(=CC4C3C=CC3CCCC34)C(=O)C2C)OC1C"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1CCCC(O)C(C)C(=O)C2=CC3C(C=CC4CCCC43)C2CC(=O)O1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1CCCC(O)C(CCO)C(=O)C2=CC3C(C=CC4CCCC43)C2CC(=O)O1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0076_MITE0000214",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCC1CCCC(O)C(CCO)CC2=CC3C(C=CC4CCCC43)C2CC(=O)O1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1CCC(CO)C(O)C(CCO)CC2=CC3C(C=CC4CCCC43)C2CC(=O)O1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1CCC(C(O)CO)C(O)C(CCO)CC2=CC3C(C=CC4CCCC43)C2CC(=O)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1CCC(C(C)O)C(O)C(CCO)CC2=CC3C(C=CC4CCCC43)C2CC(=O)O1"
+        }
+      ],
+      "best_similarity": 0.4206219312602291,
+      "best_smiles": "CCC1CCC(C(C)O)C(O)C(CCO)CC2=CC3C(C=CC4CCCC43)C2CC(=O)O1",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "O-glycosylation": 1,
+        "Decarboxylation": 3,
+        "Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000151",
+      "cluster_name": "Stambomycin A",
+      "status": "ok",
+      "mature_heavy_atoms": 96,
+      "core_heavy_atoms": 80,
+      "n_firing_rules": 34,
+      "n_firing_jn": 22,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "Hydroxylation": 8,
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(C)CCCC1C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)OC(C)C=CC(O)CC(O)CCCC(O)C(C)C(O)CCC(C)C(O)CC(O)CC(C)CCC(O)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(C)CCCC1C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)OC(C)C=CC(O)CCCCCC(O)C(C)C(O)CCC(C)C(O)CC(O)CC(C)CCC(O)C1O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC=CC(O)CCCCCC(O)C(C)C(O)CCC(C)C(O)CC(O)CC(C)CCC(O)C(O)C(C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)O)CCCC(C)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0079_MITE0000133",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCC=CCCCCCCC(O)C(C)C(O)CCC(C)C(O)CC(O)CC(C)CCC(O)C(O)C(C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)O)CCCC(C)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC=CCCCCCCC(O)C(C)C(O)CCC(C)C(O)CC(O)CC(C)CCCC(O)C(C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)O)CCCC(C)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC=CCCCCCCC(O)C(C)C(O)CCC(C)C(O)CCCC(C)CCCC(O)C(C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)O)CCCC(C)CC"
+        }
+      ],
+      "best_similarity": 0.927437641723356,
+      "best_smiles": "CCC=CCCCCCCC(O)C(C)C(O)CCC(C)C(O)CCCC(C)CCCC(O)C(C=C(C)C(O)CC(O)CCCC(O)C(C)C(O)CC=CC=C(C)C(O)C(C)C(O)CC(O)C(C)C(=O)CC(=O)O)CCCC(C)CC",
+      "path_sources": {
+        "JN_rules": 2,
+        "MITE_rdchiral": 4
+      },
+      "path_classes": {
+        "O-glycosylation": 2,
+        "Hydroxylation|Oxidation": 3,
+        "Hydroxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000157",
+      "cluster_name": "Tautomycetin",
+      "status": "ok",
+      "mature_heavy_atoms": 43,
+      "core_heavy_atoms": 33,
+      "n_firing_rules": 35,
+      "n_firing_jn": 19,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "Hydroxylation": 9,
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Monooxygenation": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "C=CC(=CC(=O)CC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(C)O)CC"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "C=CC(=CC(=O)CC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CCO)CC"
+        },
+        {
+          "rule_name": "mite_rdchiral_0076_MITE0000214",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "C=CC(=CCCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CCO)CC"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "C=CC(CC)=C(CO)CCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "C=CC(CC)=C(CCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CCO)C(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C=CC(CC)=C(CCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CC)C(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C=CC(CC)=C(CCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CC)C(C)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "C=CC(CC)=C(CCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CC)C(O)CCO"
+        }
+      ],
+      "best_similarity": 0.7342995169082126,
+      "best_smiles": "C=CC(CC)=C(CCC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(O)CC)C(O)CCO",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Decarboxylation": 4,
+        "Oxidation": 1,
+        "Hydroxylation-like oxygen insertion": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000159",
+      "cluster_name": "Tautomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 54,
+      "core_heavy_atoms": 45,
+      "n_firing_rules": 35,
+      "n_firing_jn": 20,
+      "n_firing_mite": 15,
+      "firing_classes": {
+        "Hydroxylation": 9,
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(C(O)CC(=O)C(C)C(O)CCC(C)C1OC2(CCC(C)C(CCC(C)C(C)=O)O2)CCC1C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC(C(O)CC(=O)C(C)C(O)CCC(C)C1OC2(CCC(C)C(CCC(C)C(C)=O)O2)CCC1C)C(O)C(C)CCO"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CCO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CC"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CCCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CCC(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CCC(C)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CCC(C)=O"
+        }
+      ],
+      "best_similarity": 0.9102167182662538,
+      "best_smiles": "CCC(C)C(O)C(C)CCC(O)C(C)C(=O)CC(O)C(OC)C(O)C(C)CCC(C)=O",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 2,
+        "Decarboxylation": 3,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Reduction": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000163",
+      "cluster_name": "Tetronasin",
+      "status": "ok",
+      "mature_heavy_atoms": 43,
+      "core_heavy_atoms": 36,
+      "n_firing_rules": 31,
+      "n_firing_jn": 19,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Hydroxylation": 5,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Hydroxylation|Monooxygenation": 1,
+        "Hydroxylation|Oxidation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Methylation": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(C)C1CC(C)C(C(C)C=CC(O)CCC(C)[CH]C(=CC2CCCC(C)C2C(C)C(O)=C2C(=O)COC2=O)CO)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC(C)[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(=CC1CCCC(C)C1C(C)C(O)=C1C(=O)COC1=O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC(C)[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(=CC1CCCC(C)C1C(C)C(O)=C(C=O)C(C)=O)CO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "COC(C)[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(=CC1CCCC(C)C1C(C)C(O)=C(C=O)C(=O)CCO)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC(C)[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(=CC1CCCC(C)C1C(C)C=C(C=O)C(=O)CCO)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "COC(C)[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(C)=CC1CCCC(C)C1C(C)C=C(C=O)C(=O)CCO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(C)=CC1CCCC(C)C1C(C)C=C(C=O)C(=O)CCO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(C)=CC1CCCC(C)C1C(C)C=C(C=O)C(=O)CC"
+        }
+      ],
+      "best_similarity": 0.4843373493975904,
+      "best_smiles": "CC[CH]CC(C)CC(C)C=CC(O)CCC(C)[CH]C(C)=CC1CCCC(C)C1C(C)C=C(C=O)C(=O)CC",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 5,
+        "Decarboxylation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000164",
+      "cluster_name": "Tetronomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 43,
+      "core_heavy_atoms": 35,
+      "n_firing_rules": 31,
+      "n_firing_jn": 20,
+      "n_firing_mite": 11,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Hydroxylation": 5,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Hydroxylation|Monooxygenation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Methylation": 1,
+        "Monooxygenation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C=CC([O-])=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C(CO)C1OC(C=CCC2CCC(C(C)OC)O2)CCC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "C=C(CO)C([O-])=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C(CO)C1OC(C=CCC2CCC(C(C)OC)O2)CCC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "C=C(CO)C([O-])=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C([CH]C(C)CCC(O)C=CCC1CCC(C(C)OC)O1)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C=C(C=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C([CH]C(C)CCC(O)C=CCC1CCC(C(C)OC)O1)CO)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C=C(C=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C([CH]C(C)CCC(O)C=CCC1CCC(CC)O1)CO)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "C=C(C)C=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C([CH]C(C)CCC(O)C=CCC1CCC(CC)O1)CO"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "C=C(C)C=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C(C)[CH]C(C)CCC(O)C=CCC1CCC(CC)O1"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "C=C(C)C=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C(C)[CH]C(C)CCC(O)C=CCC(O)CC[CH]CC"
+        }
+      ],
+      "best_similarity": 0.48132780082987553,
+      "best_smiles": "C=C(C)C=C(C=O)C(=O)C(C)C1C(C)CCCC1C=C(C)[CH]C(C)CCC(O)C=CCC(O)CC[CH]CC",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 3,
+        "Decarboxylation": 1,
+        "O-glycosylation": 2,
+        "Hydroxylation|Oxidation|Monooxygenation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0000165",
+      "cluster_name": "Tiacumicin B",
+      "status": "ok",
+      "mature_heavy_atoms": 72,
+      "core_heavy_atoms": 29,
+      "n_firing_rules": 43,
+      "n_firing_jn": 20,
+      "n_firing_mite": 23,
+      "firing_classes": {
+        "Hydroxylation": 10,
+        "O-glycosylation": 8,
+        "Halogenation": 7,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Hydroxylation|Monooxygenation": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 3,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCc1c(Cl)c(O)c(Cl)c(O)c1C(=O)OC1C(C)OC(OCC2=CC=CCC(O)C(C)=CC(CC)C(O)C(C)=CC(C)=CCC(C(C)O)OC2=O)C(OC)C1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1C=C(C)C(O)CC=CC=C(C)C(=O)OC(C(C)O)CC=C(C)C=C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0063_MITE0000342",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCC1CC=C(C)C=C(C)C(O)C(CC)C=C(C)C(O)CC=CC=C(C)C(=O)O1"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC1CC=C(C)C=C(C)C(O)C(CC)C=C(C)C(O)CC=CC=C(C)C(=O)O1",
+      "path_sources": {
+        "JN_rules": 2,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Hydroxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0000166",
+      "cluster_name": "Tylactone",
+      "status": "ok",
+      "mature_heavy_atoms": 28,
+      "core_heavy_atoms": 28,
+      "n_firing_rules": 31,
+      "n_firing_jn": 19,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Hydroxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Monooxygenation": 1,
+        "N-glycosylation": 1,
+        "Reduction": 1
+      },
+      "reached_core": true,
+      "already_core": true,
+      "n_steps": 0,
+      "path": [],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC1CC(C)C(=O)C=CC(C)=CC(C)C(CC)OC(=O)CC(O)C(C)C1O",
+      "path_sources": {},
+      "path_classes": {}
+    },
+    {
+      "bgc_id": "BGC0001003",
+      "cluster_name": "Lipomycin",
+      "status": "ok",
+      "mature_heavy_atoms": 42,
+      "core_heavy_atoms": 24,
+      "n_firing_rules": 34,
+      "n_firing_jn": 22,
+      "n_firing_mite": 12,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "N-glycosylation": 3,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "Monooxygenation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCCC1C(=O)C(C(=O)C=CC=CC=CC=CC(C)=CC(C)C(OC2CC(O)C(O)C(C)O2)C(C)C)C(=O)N1C"
+        },
+        {
+          "rule_name": "rule0163_2",
+          "source": "JN_rules",
+          "terms": "N-glycosylation",
+          "smiles": "CCCCC(=O)C(C(=O)O)C(=O)C=CC=CC=CC=CC(C)=CC(C)C(OC1CC(O)C(O)C(C)O1)C(C)C"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCCC(=O)C(C(=O)O)C(=O)C=CC=CC=CC=CC(C)=CC(C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0112_MITE0000327",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CCC=CC(=O)C(C(=O)O)C(=O)C=CC=CC=CC=CC(C)=CC(C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0076_MITE0000214",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCC=CCC(C(=O)O)C(=O)C=CC=CC=CC=CC(C)=CC(C)C(O)C(C)C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCC=CCC(C)C(=O)C=CC=CC=CC=CC(C)=CC(C)C(O)C(C)C"
+        }
+      ],
+      "best_similarity": 0.7114093959731543,
+      "best_smiles": "CCC=CCC(C)C(=O)C=CC=CC=CC=CC(C)=CC(C)C(O)C(C)C",
+      "path_sources": {
+        "MITE_rdchiral": 4,
+        "JN_rules": 2
+      },
+      "path_classes": {
+        "Oxidation": 3,
+        "N-glycosylation": 1,
+        "O-glycosylation": 1,
+        "Reduction": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001004",
+      "cluster_name": "Lobophorin",
+      "status": "ok",
+      "mature_heavy_atoms": 82,
+      "core_heavy_atoms": 35,
+      "n_firing_rules": 36,
+      "n_firing_jn": 22,
+      "n_firing_mite": 14,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Hydrolysis": 1,
+        "Hydroxylation|Monooxygenation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Methylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 5,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "COC(=O)NC1C(C)OC(OC2CC=C(C)C3C=CC4CC(C)CC(C)C4C3(C)C(=O)C3C(=O)OC4(CC(C)C(CO)=CC4C=C2C)C3=O)CC1(C)N"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC(=O)NC1C(C)OC(OC2CC=C(C)C3C=CC4CC(C)CC(C)C4C3(C)C(=O)C(C(=O)O)C(=O)[C]3CC(C)C(CO)=CC3C=C2C)CC1(C)N"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2C=C(CO)C(C)C[C]2C(=O)C(C(=O)O)C(=O)C2(C)C(C=CC3CC(C)CC(C)C32)C(C)=CCC1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "CC1=CC2C=C(C)C(C)C[C]2C(=O)C(C(=O)O)C(=O)C2(C)C(C=CC3CC(C)CC(C)C32)C(C)=CCC1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1=CC2C=C(C)C(C)C[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3CC(C)CC(C)C32)C(C)=CCC1"
+        }
+      ],
+      "best_similarity": 0.36541889483065954,
+      "best_smiles": "CC1=CC2C=C(C)C(C)C[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3CC(C)CC(C)C32)C(C)=CCC1",
+      "path_sources": {
+        "JN_rules": 3,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 2,
+        "O-glycosylation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001046",
+      "cluster_name": "Streptolydigin",
+      "status": "ok",
+      "mature_heavy_atoms": 43,
+      "core_heavy_atoms": 26,
+      "n_firing_rules": 31,
+      "n_firing_jn": 22,
+      "n_firing_mite": 9,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Cyclization": 1,
+        "Epoxidation": 1,
+        "Hydrolysis": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CNC(=O)C(C)C1C(=O)C(C(=O)C=CC(C)=CC(C)C(O)C(C)C2C=CC3(CO3)[C](C)O2)C(=O)N1C1CCC(O)C(C)O1"
+        },
+        {
+          "rule_name": "rule0163_2",
+          "source": "JN_rules",
+          "terms": "N-glycosylation",
+          "smiles": "CNC(=O)C(C)[CH]C(=O)C(C(=O)O)C(=O)C=CC(C)=CC(C)C(O)C(C)C1C=CC2(CO2)[C](C)O1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C]C1(C=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C(=O)O)C(=O)[CH]C(C)C(=O)NC)CO1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "C[C]C1(C=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C)C(=O)[CH]C(C)C(=O)NC)CO1"
+        },
+        {
+          "rule_name": "rule0163_2",
+          "source": "JN_rules",
+          "terms": "N-glycosylation",
+          "smiles": "C[C]C1(C=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C)C(=O)[CH]C(C)C(=O)O)CO1"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "C[C]C1(C=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C)C(=O)[CH]C(C)C)CO1"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "C[C][C](C)C=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C)C(=O)[CH]C(C)C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "C[C][C](C)C(=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C)C(=O)[CH]C(C)C)CO"
+        }
+      ],
+      "best_similarity": 0.5838383838383838,
+      "best_smiles": "C[C][C](C)C(=CCC(C)C(O)C(C)C=C(C)C=CC(=O)C(C)C(=O)[CH]C(C)C)CO",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "N-glycosylation": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Decarboxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001065",
+      "cluster_name": "Herboxidiene",
+      "status": "ok",
+      "mature_heavy_atoms": 31,
+      "core_heavy_atoms": 28,
+      "n_firing_rules": 33,
+      "n_firing_jn": 20,
+      "n_firing_mite": 13,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Hydroxylation": 3,
+        "Oxidation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Carboxylation": 1,
+        "Epoxidation": 1,
+        "Hydrolysis": 1,
+        "Methylation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 5,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(OC)C(C)C1OC1(C)CC(C)C=CC=C(C)C1OC(CC(=O)O)CCC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0161_MITE0000199",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CCC(OC)C(C)C=C(C)CC(C)C=CC=C(C)C1OC(CC(=O)O)CCC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(OC)C(C)C=C(C)CC(C)C=CC=C(C)C(O)C(C)CCCCC(=O)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0112_MITE0000327",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CCC(OC)C(C)C=C(C)CC(C)C=CC=C(C)C(O)C(C)CCC=CC(=O)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0003_MITE0000001",
+          "source": "MITE_rdchiral",
+          "terms": "Methylation",
+          "smiles": "CCC(O)C(C)C=C(C)CC(C)C=CC=C(C)C(O)C(C)CCC=CC(=O)O"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC(O)C(C)C=C(C)CC(C)C=CC=C(C)C(O)C(C)CCC=CC(=O)O",
+      "path_sources": {
+        "MITE_rdchiral": 4,
+        "JN_rules": 1
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 1,
+        "Oxidation": 1,
+        "O-glycosylation": 1,
+        "Reduction": 1,
+        "Methylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001072",
+      "cluster_name": "Simocyclinone",
+      "status": "ok",
+      "mature_heavy_atoms": 66,
+      "core_heavy_atoms": 14,
+      "n_firing_rules": 46,
+      "n_firing_jn": 23,
+      "n_firing_mite": 23,
+      "firing_classes": {
+        "Halogenation": 7,
+        "O-glycosylation": 7,
+        "Decarboxylation": 6,
+        "Oxidation": 4,
+        "Hydroxylation": 3,
+        "Hydroxylation|Oxidation": 3,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Monooxygenation": 2,
+        "Acetylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(=O)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "O=C(O)CCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "O=C(O)CC(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(O)CC(=O)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CC(=O)CC(=O)O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "O=C(O)CC(=O)CCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "O=C(O)CC(=O)CC(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC(O)CC(=O)CC(=O)O"
+        }
+      ],
+      "best_similarity": 0.5555555555555556,
+      "best_smiles": "CC(O)CC(=O)CC(=O)O",
+      "path_sources": {
+        "JN_rules": 7,
+        "MITE_rdchiral": 1
+      },
+      "path_classes": {
+        "O-glycosylation": 1,
+        "Decarboxylation": 4,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Reduction": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001169",
+      "cluster_name": "Piericidin A1",
+      "status": "ok",
+      "mature_heavy_atoms": 30,
+      "core_heavy_atoms": 28,
+      "n_firing_rules": 35,
+      "n_firing_jn": 19,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "Hydroxylation": 8,
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Methylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0005_MITE0000015",
+          "source": "MITE_rdchiral",
+          "terms": "Methylation",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(C)=CCc1cc(=O)c(OC)c(OC)[nH]1"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)c(OC)c(OC)[nH]1)CCO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)c(OC)c[nH]1)CCO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)cc[nH]1)CCO"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)cc[nH]1)CC(O)CO"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)cc[nH]1)CC(C)O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0106_MITE0000124",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)cc[nH]1)CC(C)=O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)cc[nH]1)CC(=O)CCO"
+        }
+      ],
+      "best_similarity": 0.42748091603053434,
+      "best_smiles": "CC=C(C)C(O)C(C)C=C(C)C=CCC(=CCc1cc(=O)cc[nH]1)CC(=O)CCO",
+      "path_sources": {
+        "MITE_rdchiral": 2,
+        "JN_rules": 6
+      },
+      "path_classes": {
+        "Methylation": 1,
+        "Decarboxylation": 3,
+        "Hydroxylation-like oxygen insertion": 3,
+        "Reduction": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001183",
+      "cluster_name": "Lobophorin A",
+      "status": "ok",
+      "mature_heavy_atoms": 82,
+      "core_heavy_atoms": 35,
+      "n_firing_rules": 36,
+      "n_firing_jn": 22,
+      "n_firing_mite": 14,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 6,
+        "Decarboxylation": 4,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Hydrolysis": 1,
+        "Hydroxylation|Monooxygenation": 1,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Methylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC1C(O)CC(OC2C(O)CC(OC3CC(OC4C(C)CC(C)C5C4C=CC4C(C)=CCC(O)C(C)=CC6C=C(CO)C(C)CC67OC(=O)C(C7=O)C(=O)C45C)OC(C)C3O)OC2C)OC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "COC1C(O)CC(OC2C(O)CC(OC3CC(OC4C(C)CC(C)C5C4C=CC4C(C)=CCC(O)C(C)=CC6C=C(CO)C(C)C[C]6C(=O)C(C(=O)O)C(=O)C45C)OC(C)C3O)OC2C)OC1C"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1=CC2C=C(CO)C(C)C[C]2C(=O)C(C(=O)O)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0009_MITE0000010",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation|Monooxygenation",
+          "smiles": "CC1=CC2C=C(C)C(O)CC=C(C)C3C=CC4C(O)C(C)CC(C)C4C3(C)C(=O)C(C(=O)O)C(=O)[C]2CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1=CC2C=C(C)C(O)CC=C(C)C3C=CC4C(O)C(C)CC(C)C4C3(C)C(=O)C(C)C(=O)[C]2CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC2C=C(C)C(C)C(CO)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1=CC2C=C(C)C(C)C(C)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1=CC2C=C(C)C(C)C(CCO)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O"
+        }
+      ],
+      "best_similarity": 0.4259541984732824,
+      "best_smiles": "CC1=CC2C=C(C)C(C)C(CCO)[C]2C(=O)C(C)C(=O)C2(C)C(C=CC3C(O)C(C)CC(C)C32)C(C)=CCC1O",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 3,
+        "Hydroxylation|Oxidation|Monooxygenation": 1,
+        "Oxidation": 1,
+        "Decarboxylation": 2,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001204",
+      "cluster_name": "Versipelostatin",
+      "status": "ok",
+      "mature_heavy_atoms": 78,
+      "core_heavy_atoms": 44,
+      "n_firing_rules": 35,
+      "n_firing_jn": 20,
+      "n_firing_mite": 15,
+      "firing_classes": {
+        "Hydroxylation": 9,
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0171_MITE0000160",
+          "source": "MITE_rdchiral",
+          "terms": "Reduction",
+          "smiles": "CCC1=CC(CO)CC(C)C(OC2CC(O)C(OC3CC(OC)C(OC4CC(O)C(O)C(C)O4)C(C)O3)C(C)O2)C(C)CCCC2(C)C=C(C)C(C)CC23OC(=O)C(C(=O)C2(CC)C1C(C)=CC1C(O)=CC(=O)C(C)C12)C3=O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1=CC(CO)CC(C)C(O)C(C)CCCC2(C)C=C(C)C(C)CC23OC(=O)C(C(=O)C2(CC)C1C(C)=CC1C(O)=CC(=O)C(C)C12)C3=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1=CC(CO)CC(C)C(O)C(C)CCCC2(C)C=C(C)C(C)CC2C(=O)C(C=O)C(=O)C2(CC)C1C(C)=CC1C(O)=CC(=O)C(C)C12"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1=CC(CO)CC(C)C(O)C(C)CCCC2(C)C=C(C)C(C)CC2C(=O)C(C=O)C(=O)C2(CC)C1C(C)=CC1C=CC(=O)C(C)C12"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1=CC(CO)CC(C)C(O)C(C)CCCC2(C)C=C(C)C(C)CC2C(=O)C(C=O)C(=O)C2(CC)C1C(C)=CC1C=C(CO)C(=O)C(C)C12"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC1=CC(CO)CC(C)C(O)C(C)CCCC2(C)C=C(C)C(C)CC2C(=O)C(C=O)C(=O)C2(CC)C1C(C)=CC1C=C(C(O)CO)C(=O)C(C)C12"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC1=CC(CO)CC(C)C(O)C(C)CCCC2(C)C=C(C)C(C)CC2C(=O)C(C=O)C(=O)C2(CC)C1C(C)=CC1C=C(CCO)C(=O)C(C)C12"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC1=CC2C=C(C)C3C(CC)=CC(CO)CC(C)C(O)C(C)CCCC4(C)C=C(C)C(C)CC4C(=O)C(C=O)C(=O)C3(CC)C2C(C)C1=O"
+        }
+      ],
+      "best_similarity": 0.42857142857142855,
+      "best_smiles": "CCC1=CC2C=C(C)C3C(CC)=CC(CO)CC(C)C(O)C(C)CCCC4(C)C=C(C)C(C)CC4C(=O)C(C=O)C(=O)C3(CC)C2C(C)C1=O",
+      "path_sources": {
+        "MITE_rdchiral": 2,
+        "JN_rules": 6
+      },
+      "path_classes": {
+        "Reduction": 1,
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 3,
+        "Decarboxylation": 2,
+        "Hydroxylation|Oxidation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001381",
+      "cluster_name": "Brasilinolide",
+      "status": "ok",
+      "mature_heavy_atoms": 81,
+      "core_heavy_atoms": 59,
+      "n_firing_rules": 37,
+      "n_firing_jn": 21,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 6,
+        "Hydroxylation": 6,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Reduction": 2,
+        "Carboxylation": 1,
+        "Epoxidation": 1,
+        "Hydrolysis": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 6,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)CCC(C)C(O)CC(=O)C(O)C(O)CC(O)CC(O)CC(OC(=O)CC(=O)O)CCCC(O)C2OC2C1C"
+        },
+        {
+          "rule_name": "rule_epoxide_1",
+          "source": "JN_rules",
+          "terms": "Epoxidation",
+          "smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)CCC(C)C(O)CC(=O)C(O)C(O)CC(O)CC(O)CC(OC(=O)CC(=O)O)CCCC(O)C=CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)CCC(C)C(O)CC(=O)CC(O)CC(O)CC(O)CC(OC(=O)CC(=O)O)CCCC(O)C=CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)C(CO)CC(C)C(O)CC(=O)CC(O)CC(O)CC(O)CC(OC(=O)CC(=O)O)CCCC(O)C=CC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)C(CO)CC(C)C(O)CC(=O)CC(O)CC(O)CC(O)CC(O)CCCC(O)C=CC1C"
+        },
+        {
+          "rule_name": "mite_rdchiral_0053_MITE0000062",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation",
+          "smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)C(C)CC(C)C(O)CC(=O)CC(O)CC(O)CC(O)CC(O)CCCC(O)C=CC1C"
+        }
+      ],
+      "best_similarity": 0.9872611464968153,
+      "best_smiles": "CCC(C)C(O)C(C)C(O)C(C)C1OC(=O)C=CCC(O)CC(O)CC(O)C(C)CC(C)C(O)CC(=O)CC(O)CC(O)CC(O)CC(O)CCCC(O)C=CC1C",
+      "path_sources": {
+        "JN_rules": 4,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 1,
+        "Epoxidation": 1,
+        "Hydroxylation|Oxidation": 1,
+        "Decarboxylation": 1,
+        "O-glycosylation": 1,
+        "Hydroxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001495",
+      "cluster_name": "Actinoallolide",
+      "status": "ok",
+      "mature_heavy_atoms": 40,
+      "core_heavy_atoms": 39,
+      "n_firing_rules": 31,
+      "n_firing_jn": 20,
+      "n_firing_mite": 11,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Hydroxylation": 6,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 1,
+      "path": [
+        {
+          "rule_name": "rule_p450_tert",
+          "source": "JN_rules",
+          "terms": "C-hydroxylation (P450 reverse)",
+          "smiles": "CCC(=O)C(C)C(O)C(C)C=C(C)CC(C)C(O)C(C)C1CC=C(C)CC(C)C(=O)C(CC)C(=O)CC(=O)O1"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CCC(=O)C(C)C(O)C(C)C=C(C)CC(C)C(O)C(C)C1CC=C(C)CC(C)C(=O)C(CC)C(=O)CC(=O)O1",
+      "path_sources": {
+        "JN_rules": 1
+      },
+      "path_classes": {
+        "C-hydroxylation (P450 reverse)": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001533",
+      "cluster_name": "Borrelidin",
+      "status": "ok",
+      "mature_heavy_atoms": 35,
+      "core_heavy_atoms": 34,
+      "n_firing_rules": 37,
+      "n_firing_jn": 21,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "Hydroxylation": 7,
+        "O-glycosylation": 7,
+        "Decarboxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Dehydration": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": true,
+      "already_core": false,
+      "n_steps": 1,
+      "path": [
+        {
+          "rule_name": "rule_nitrile_methyl_1",
+          "source": "JN_rules",
+          "terms": "Nitrile installation",
+          "smiles": "CC1=CC=CCC(C2CCCC2C(=O)O)OC(=O)CC(O)C(C)CC(C)CC(C)CC(C)C1O"
+        }
+      ],
+      "best_similarity": 1.0,
+      "best_smiles": "CC1=CC=CCC(C2CCCC2C(=O)O)OC(=O)CC(O)C(C)CC(C)CC(C)CC(C)C1O",
+      "path_sources": {
+        "JN_rules": 1
+      },
+      "path_classes": {
+        "Nitrile installation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001580",
+      "cluster_name": "Ebelactone",
+      "status": "ok",
+      "mature_heavy_atoms": 24,
+      "core_heavy_atoms": 25,
+      "n_firing_rules": 27,
+      "n_firing_jn": 19,
+      "n_firing_mite": 8,
+      "firing_classes": {
+        "O-glycosylation": 7,
+        "Hydroxylation": 5,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "N-glycosylation": 1,
+        "Oxidation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 3,
+      "path": [
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC(=CC(C)C(=O)C(C)C(O)C(C)CCCO)CC(C)C1OC(=O)C1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC(=CC(C)C(=O)C(C)C(O)C(C)CCCO)CC(C)C(O)C(C)C=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCC(C)C(O)C(C)C(=O)C(C)C=C(C)CC(C)C(O)C(C)C=O"
+        }
+      ],
+      "best_similarity": 0.8198924731182796,
+      "best_smiles": "CCCC(C)C(O)C(C)C(=O)C(C)C=C(C)CC(C)C(O)C(C)C=O",
+      "path_sources": {
+        "JN_rules": 3
+      },
+      "path_classes": {
+        "Decarboxylation": 1,
+        "O-glycosylation": 1,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001670",
+      "cluster_name": "Monensin",
+      "status": "ok",
+      "mature_heavy_atoms": 47,
+      "core_heavy_atoms": 41,
+      "n_firing_rules": 36,
+      "n_firing_jn": 20,
+      "n_firing_mite": 16,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Hydroxylation": 7,
+        "Decarboxylation": 4,
+        "Hydroxylation|Oxidation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC1(C)CCC2(CC(O)C(C)C(C(C)C(OC)C(C)C(=O)O)O2)O1)C1OC(C2OC(O)(CO)C(C)CC2C)CC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC(C)CCC1CC(O)C(C)C(C(C)C(OC)C(C)C(=O)O)O1)C1OC(C2OC(O)(CO)C(C)CC2C)CC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC(C)CCC1CC(O)C(C)C(C(C)C(OC)C(C)C(=O)O)O1)C1OC(CC(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC(C)CCC1CC(O)C(C)C(C(C)C(OC)C(C)C=O)O1)C1OC(CC(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(CCCC(C)CCC1CC(O)C(C)C(C(C)C(OC)C(C)C(=O)CO)O1)C1OC(CC(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(OC)C(C)C(=O)CO)C1OC(CC(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)C1OC(CC(C)CC(C)C(O)CO)CC1C"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)CC(C)CCCC(C)CC(C)C(O)CO"
+        }
+      ],
+      "best_similarity": 0.46568627450980393,
+      "best_smiles": "CCC(CCCC(C)CCCCC(O)C(C)C(O)C(C)C(O)C(C)C(=O)CO)CC(C)CCCC(C)CC(C)C(O)CO",
+      "path_sources": {
+        "JN_rules": 8
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 5,
+        "Decarboxylation": 1,
+        "O-glycosylation": 2
+      }
+    },
+    {
+      "bgc_id": "BGC0001709",
+      "cluster_name": "Nystatin",
+      "status": "ok",
+      "mature_heavy_atoms": 65,
+      "core_heavy_atoms": 52,
+      "n_firing_rules": 37,
+      "n_firing_jn": 22,
+      "n_firing_mite": 15,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Hydroxylation": 5,
+        "N-glycosylation": 3,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydrolysis": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Other": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 7,
+      "path": [
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(OC2OC(C)C(O)C(N)C2O)CC2OC(O)(CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC2OC(O)(CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O)CC(O)C2C(=O)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C(=O)O)C(O)C[C](O)CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0069_MITE0000411",
+          "source": "MITE_rdchiral",
+          "terms": "Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCC(O)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCCCCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CC1C=CC=CCCC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CCC(CO)CCC(O)CC(O)CC(O)CC(=O)OC(C)C(C)C1O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CC1CC[C](O)CC(O)C(C)C(O)CC(O)C=CC=CC=CC=CCCC=CC=CC(C)C(O)C(C)C(C)OC(=O)CC(O)CC(O)CC(O)CC1"
+        }
+      ],
+      "best_similarity": 0.9354838709677419,
+      "best_smiles": "CC1CC[C](O)CC(O)C(C)C(O)CC(O)C=CC=CC=CC=CCCC=CC=CC(C)C(O)C(C)C(C)OC(=O)CC(O)CC(O)CC(O)CC1",
+      "path_sources": {
+        "MITE_rdchiral": 3,
+        "JN_rules": 4
+      },
+      "path_classes": {
+        "Hydroxylation|Oxidation": 2,
+        "O-glycosylation": 2,
+        "Oxidation": 1,
+        "Decarboxylation": 1,
+        "Hydroxylation-like oxygen insertion": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001773",
+      "cluster_name": "Selvamicin",
+      "status": "ok",
+      "mature_heavy_atoms": 65,
+      "core_heavy_atoms": 44,
+      "n_firing_rules": 32,
+      "n_firing_jn": 21,
+      "n_firing_mite": 11,
+      "firing_classes": {
+        "O-glycosylation": 8,
+        "Decarboxylation": 5,
+        "Hydroxylation": 5,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "C-hydroxylation (P450 reverse)": 1,
+        "Methylation": 1,
+        "N-glycosylation": 1,
+        "Oxidation": 1,
+        "Reduction": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 8,
+      "path": [
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC1OC(=O)CCC(O)C(O)CC(O)CC2(O)CC(O)C(C)(O)C(CC(OC3OC(C)C(O)C(O)C3O)C=CC=CC=CC=CC=CC(C)C(O)C1C)O2"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(CC1OC(O)(CC(O)CC(O)C(O)CCC=O)CC(O)C1(C)O)OC1OC(C)C(O)C(O)C1O"
+        },
+        {
+          "rule_name": "rule_ogly_pyranose_1",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC1OC(O)(CC(O)CC(O)C(O)CCC=O)CC(O)C1(C)O"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC(O)C(C)(O)C(O)C[C](O)CC(O)CC(O)C(O)CCC=O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC(O)C(C)(O)C(O)C[C](O)CC(O)CCC(O)CCC=O"
+        },
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CC(O)CCC(O)CCC=O"
+        },
+        {
+          "rule_name": "mite_rdchiral_0062_MITE0000304",
+          "source": "MITE_rdchiral",
+          "terms": "Hydroxylation|Oxidation",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CC(O)CCCCCC=O"
+        },
+        {
+          "rule_name": "rule0024_41",
+          "source": "JN_rules",
+          "terms": "Decarboxylation",
+          "smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CC(O)CCC(CO)CCC=O"
+        }
+      ],
+      "best_similarity": 0.8028169014084507,
+      "best_smiles": "CCC(O)C(C)C(O)C(C)C=CC=CC=CC=CC=CC(O)CC(O)C(C)C(O)C[C](O)CC(O)CCC(CO)CCC=O",
+      "path_sources": {
+        "JN_rules": 6,
+        "MITE_rdchiral": 2
+      },
+      "path_classes": {
+        "O-glycosylation": 4,
+        "Hydroxylation|Oxidation": 2,
+        "Hydroxylation-like oxygen insertion": 1,
+        "Decarboxylation": 1
+      }
+    },
+    {
+      "bgc_id": "BGC0001828",
+      "cluster_name": "Griseochelin / Zincophorin",
+      "status": "ok",
+      "mature_heavy_atoms": 40,
+      "core_heavy_atoms": 41,
+      "n_firing_rules": 33,
+      "n_firing_jn": 19,
+      "n_firing_mite": 14,
+      "firing_classes": {
+        "Hydroxylation": 8,
+        "O-glycosylation": 7,
+        "Decarboxylation": 4,
+        "Sulfation": 3,
+        "Carbonyl reduction": 2,
+        "Hydroxylation-like oxygen insertion": 2,
+        "Hydroxylation|Oxidation": 2,
+        "Oxidation": 2,
+        "Carboxylation": 1,
+        "Hydrolysis": 1,
+        "N-glycosylation": 1
+      },
+      "reached_core": false,
+      "already_core": false,
+      "n_steps": 2,
+      "path": [
+        {
+          "rule_name": "rule1165_2",
+          "source": "JN_rules",
+          "terms": "Hydroxylation-like oxygen insertion",
+          "smiles": "CCCC(C)C=C(C)C(O)C(C)C=CCCC(O)C(C)C(O)C(C)C(O)C(C)C1OC(C(C)C=O)CCC1C"
+        },
+        {
+          "rule_name": "rule0009_31",
+          "source": "JN_rules",
+          "terms": "O-glycosylation",
+          "smiles": "CCCC(C)C=C(C)C(O)C(C)C=CCCC(O)C(C)C(O)C(C)C(O)C(C)CC(C)CCC(O)C(C)C=O"
+        }
+      ],
+      "best_similarity": 0.850415512465374,
+      "best_smiles": "CCCC(C)C=C(C)C(O)C(C)C=CCCC(O)C(C)C(O)C(C)C(O)C(C)CC(C)CCC(O)C(C)C=O",
+      "path_sources": {
+        "JN_rules": 2
+      },
+      "path_classes": {
+        "Hydroxylation-like oxygen insertion": 1,
+        "O-glycosylation": 1
+      }
+    }
+  ]
+}

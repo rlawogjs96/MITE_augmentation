@@ -1,0 +1,67 @@
+{
+    "accession": "MITE0000156",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0003093.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0002-8323-5416",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 checked crosslinks and factual correctness, added reaction description. Reviewer 2 replaced CXSMARTS with normal SMARTS."
+        },
+        {
+            "version": "2",
+            "date": "2026-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBIG ID."
+        }
+    ],
+    "enzyme": {
+        "name": "PhoM",
+        "description": "Flavin-dependent monooxygenase",
+        "references": [
+            "doi:10.1021/acs.orglett.2c01050"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI0020464A74",
+            "genpept": "UPG58742.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Monooxygenation"
+            ],
+            "description": "The monooxygenase PhoM is involved in C5 hydroxlation during biosynethesis of phomoxanthone A",
+            "reactionSMARTS": "[#6:1]-[#6:2]1:[#6:20]:[#6:17](-[#6:18]-[#8:19]):[#6:6](-[#6:7](-[#6:9]2:[#6:15](-[#8:16]):[#6:14]:[#6:13]:[#6:12]:[#6:10]:2-[#8:11])=[#8:8]):[#6:4](-[#8:5]):[#6:3]:1>>[#6:1]-[#6:2]1-[#6@@:20](/[#8])-[#6:17](-[#6:18]-[#8:19])=[#6:6](-[#6:7](-[#6:9]2:[#6:15](-[#8:16]):[#6:14]:[#6:13]:[#6:12]:[#6:10]:2-[#8:11])=[#8:8])-[#6:4](=[#8:5])-[#6:3]=1",
+            "reactions": [
+                {
+                    "substrate": "Cc1cc(O)c(C(=O)c2c(O)cccc2O)c(CO)c1",
+                    "products": [
+                        "CC1=CC(=O)C(C(=O)c2c(O)cccc2O)=C(CO)[C@@H]1O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Heterologous expression"
+                ],
+                "references": [
+                    "doi:10.1021/acs.orglett.2c01050"
+                ]
+            }
+        }
+    ]
+}

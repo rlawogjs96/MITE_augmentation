@@ -1,0 +1,16 @@
+{
+  "n_json_files": 468,
+  "file_status": {
+    "active": 454,
+    "retired": 14
+  },
+  "n_active_files": 454,
+  "n_reaction_smarts": 591,
+  "extract_status": {
+    "ok": 374,
+    "extract_empty": 110,
+    "template_to_mol_fail": 107
+  },
+  "n_ok": 374,
+  "n_unique_retro": 273
+}

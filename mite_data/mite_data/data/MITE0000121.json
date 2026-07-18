@@ -1,0 +1,61 @@
+{
+    "accession": "MITE0000121",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0001-6660-2715",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0003-0443-9902",
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer fixed reactions:substrate. Reviewer fixed reactions:products. Reviewer 2 fixed reaction SMARTS numbering."
+        }
+    ],
+    "enzyme": {
+        "name": "AbmB",
+        "description": "L-Ornithine N(5)-oxygenase",
+        "references": [
+            "doi:10.1016/j.jbc.2023.104573"
+        ],
+        "databaseIds": {
+            "uniprot": "I1ZAY9",
+            "genpept": "AFJ20768.1",
+            "mibig": "BGC0002300"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Hydroxylation"
+            ],
+            "description": "N-hydroxylation of delta-amine of ornithin",
+            "reactionSMARTS": "[#7:1]-[#6:2]-[#6:3]-[#6:4]-[#6@@:5](-[#6:7](-[#8:9])=[#8:8])/[#7:6]>>[#7:6]/[#6@:5](-[#6:7](-[#8:9])=[#8:8])-[#6:4]-[#6:3]-[#6:2]-[#7:1]-[#8]",
+            "reactions": [
+                {
+                    "substrate": "NCCC[C@H](N)C(=O)O",
+                    "products": [
+                        "N[C@@H](CCCNO)C(=O)O"
+                    ],
+                    "isIntermediate": true
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.jbc.2023.104573"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "23228",
+                "ec": "1.14.13.59"
+            }
+        }
+    ]
+}

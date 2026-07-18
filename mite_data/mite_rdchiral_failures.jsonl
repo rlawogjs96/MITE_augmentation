@@ -1,0 +1,175 @@
+{"accession": "MITE0000013", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Monooxygenation"], "enzyme": "GrhO6"}
+{"accession": "MITE0000017", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Reduction"], "enzyme": "MtmW"}
+{"accession": "MITE0000018", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "MtmGIV"}
+{"accession": "MITE0000018", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "MtmGIV"}
+{"accession": "MITE0000019", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "MtmGIII"}
+{"accession": "MITE0000020", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "MtmGII"}
+{"accession": "MITE0000033", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfB"}
+{"accession": "MITE0000033", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfB"}
+{"accession": "MITE0000033", "reaction": 3, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfB"}
+{"accession": "MITE0000034", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfA"}
+{"accession": "MITE0000034", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfA"}
+{"accession": "MITE0000035", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydrolysis"], "enzyme": "Tcp24/Orf2*/tAtf"}
+{"accession": "MITE0000035", "reaction": 2, "example": 1, "status": "no_shared_maps", "terms": ["Hydrolysis"]}
+{"accession": "MITE0000035", "reaction": 3, "example": 1, "status": "no_shared_maps", "terms": ["Hydrolysis"]}
+{"accession": "MITE0000035", "reaction": 4, "example": 1, "status": "extract_empty", "terms": ["Acylation"], "enzyme": "Tcp24/Orf2*/tAtf"}
+{"accession": "MITE0000037", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 3, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 4, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 5, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 6, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 7, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 8, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 9, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 10, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 11, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 12, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 13, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 14, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000037", "reaction": 15, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "GtfE"}
+{"accession": "MITE0000044", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Decarboxylation", "Oxidation"], "enzyme": "BotCYP"}
+{"accession": "MITE0000045", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Methylation"], "enzyme": "BotOMT"}
+{"accession": "MITE0000048", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydrolysis"], "enzyme": "BotP"}
+{"accession": "MITE0000050", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydrolysis"], "enzyme": "BotAH"}
+{"accession": "MITE0000051", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Epimerization"], "enzyme": "BotH"}
+{"accession": "MITE0000052", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Heterocyclization"], "enzyme": "BotC"}
+{"accession": "MITE0000053", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Cyclization"], "enzyme": "BotCD"}
+{"accession": "MITE0000055", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Macrolactam formation"], "enzyme": "McjC"}
+{"accession": "MITE0000056", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydrolysis"], "enzyme": "McjB"}
+{"accession": "MITE0000067", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "RebD"}
+{"accession": "MITE0000071", "reaction": 2, "example": 1, "status": "no_shared_maps", "terms": ["Halogenation"]}
+{"accession": "MITE0000076", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Halogenation"], "enzyme": "JamD"}
+{"accession": "MITE0000076", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Halogenation"], "enzyme": "JamD"}
+{"accession": "MITE0000083", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AgqD"}
+{"accession": "MITE0000083", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AgqD"}
+{"accession": "MITE0000084", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Oxidation"], "enzyme": "NapB2", "sub_atoms": 14, "r_tmpl_atoms": 14, "prod_atoms": 15, "p_tmpl_atoms": 15}
+{"accession": "MITE0000098", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "PumK"}
+{"accession": "MITE0000102", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Other"], "enzyme": "TrlE", "sub_atoms": 11, "r_tmpl_atoms": 11, "prod_atoms": 9, "p_tmpl_atoms": 9}
+{"accession": "MITE0000106", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Cyclization"], "enzyme": "MstE", "sub_atoms": 31, "r_tmpl_atoms": 31, "prod_atoms": 31, "p_tmpl_atoms": 34}
+{"accession": "MITE0000108", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "CldC"}
+{"accession": "MITE0000110", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "NgnN4"}
+{"accession": "MITE0000111", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Oxidation", "Other"], "enzyme": "NgnO3", "sub_atoms": 29, "r_tmpl_atoms": 29, "prod_atoms": 30, "p_tmpl_atoms": 30}
+{"accession": "MITE0000137", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "AnkG"}
+{"accession": "MITE0000137", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "AnkG"}
+{"accession": "MITE0000138", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "AnkE"}
+{"accession": "MITE0000139", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "AnkD"}
+{"accession": "MITE0000150", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "CYP158C1"}
+{"accession": "MITE0000150", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "CYP158C1"}
+{"accession": "MITE0000161", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Acetylation"], "enzyme": "PhoK"}
+{"accession": "MITE0000161", "reaction": 3, "example": 1, "status": "map_transfer_fail", "terms": ["Reduction"], "enzyme": "PhoK", "sub_atoms": 20, "r_tmpl_atoms": 20, "prod_atoms": 20, "p_tmpl_atoms": 20}
+{"accession": "MITE0000172", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "LauB1"}
+{"accession": "MITE0000174", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "BytO"}
+{"accession": "MITE0000175", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "BytO"}
+{"accession": "MITE0000180", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "SLI_0884"}
+{"accession": "MITE0000180", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "SLI_0884"}
+{"accession": "MITE0000187", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "HrmI"}
+{"accession": "MITE0000188", "reaction": 3, "example": 1, "status": "extract_empty", "terms": ["Hydroxylation"], "enzyme": "BorI"}
+{"accession": "MITE0000193", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Dehydrogenation"], "enzyme": "AlbA", "sub_atoms": 19, "r_tmpl_atoms": 19, "prod_atoms": 19, "p_tmpl_atoms": 19}
+{"accession": "MITE0000193", "reaction": 2, "example": 1, "status": "map_transfer_fail", "terms": ["Dehydrogenation"], "enzyme": "AlbA", "sub_atoms": 28, "r_tmpl_atoms": 28, "prod_atoms": 28, "p_tmpl_atoms": 28}
+{"accession": "MITE0000193", "reaction": 3, "example": 1, "status": "map_transfer_fail", "terms": ["Dehydrogenation"], "enzyme": "AlbA", "sub_atoms": 13, "r_tmpl_atoms": 13, "prod_atoms": 13, "p_tmpl_atoms": 13}
+{"accession": "MITE0000194", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "PhoO"}
+{"accession": "MITE0000200", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Cyclization"], "enzyme": "NodB"}
+{"accession": "MITE0000202", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "BraB"}
+{"accession": "MITE0000207", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydrolysis"], "enzyme": "LrcB1"}
+{"accession": "MITE0000212", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "TalC"}
+{"accession": "MITE0000224", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Methylation", "Prenylation"], "enzyme": "AgeMTPT"}
+{"accession": "MITE0000225", "reaction": 1, "example": 2, "status": "extract_empty", "terms": ["Cyclization"], "enzyme": "ArbB2"}
+{"accession": "MITE0000226", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "StmC"}
+{"accession": "MITE0000241", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "TolF"}
+{"accession": "MITE0000248", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Acylation"], "enzyme": "PenDE"}
+{"accession": "MITE0000251", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "KwwB"}
+{"accession": "MITE0000258", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "NosK"}
+{"accession": "MITE0000265", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "KtnC"}
+{"accession": "MITE0000266", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "DesC"}
+{"accession": "MITE0000267", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation"], "enzyme": "AfvE"}
+{"accession": "MITE0000268", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "AntC"}
+{"accession": "MITE0000268", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "AntC"}
+{"accession": "MITE0000269", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "AntD"}
+{"accession": "MITE0000270", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Methylation"], "enzyme": "Luc1"}
+{"accession": "MITE0000271", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Dehydrogenation"], "enzyme": "Luc3"}
+{"accession": "MITE0000272", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Monooxygenation", "Other"], "enzyme": "Luc2"}
+{"accession": "MITE0000274", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Reduction"]}
+{"accession": "MITE0000275", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Acylation"], "enzyme": "MppB"}
+{"accession": "MITE0000277", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "LtxC"}
+{"accession": "MITE0000279", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "SenA"}
+{"accession": "MITE0000285", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Decarboxylation", "Other"], "enzyme": "UstD"}
+{"accession": "MITE0000287", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "UstF1"}
+{"accession": "MITE0000288", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Other"], "enzyme": "UstC"}
+{"accession": "MITE0000291", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "JadS"}
+{"accession": "MITE0000294", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Reduction"], "enzyme": "LepF"}
+{"accession": "MITE0000307", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Biaryl bond formation", "Oxidation"], "enzyme": "AspB"}
+{"accession": "MITE0000308", "reaction": 1, "example": 3, "status": "extract_empty", "terms": ["Hydroxylation"], "enzyme": "Cyt1"}
+{"accession": "MITE0000313", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "Dsd6"}
+{"accession": "MITE0000315", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydroxylation", "Monooxygenation", "Oxidation"], "enzyme": "OsCYP99A3"}
+{"accession": "MITE0000315", "reaction": 1, "example": 2, "status": "extract_empty", "terms": ["Hydroxylation", "Monooxygenation", "Oxidation"], "enzyme": "OsCYP99A3"}
+{"accession": "MITE0000316", "reaction": 2, "example": 1, "status": "map_transfer_fail", "terms": ["Cyclization", "Other"], "enzyme": "LepI", "sub_atoms": 25, "r_tmpl_atoms": 25, "prod_atoms": 25, "p_tmpl_atoms": 25}
+{"accession": "MITE0000320", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "XptC"}
+{"accession": "MITE0000341", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Other"]}
+{"accession": "MITE0000344", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Heterocyclization", "Oxidation"]}
+{"accession": "MITE0000346", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Cyclization", "Heterocyclization", "Oxidation"], "enzyme": "MarG", "sub_atoms": 30, "r_tmpl_atoms": 30, "prod_atoms": 30, "p_tmpl_atoms": 30}
+{"accession": "MITE0000351", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Hydroxylation"]}
+{"accession": "MITE0000351", "reaction": 2, "example": 1, "status": "no_shared_maps", "terms": ["Cyclization"]}
+{"accession": "MITE0000352", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Prenylation"]}
+{"accession": "MITE0000353", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation"]}
+{"accession": "MITE0000354", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Cyclization"]}
+{"accession": "MITE0000355", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation"]}
+{"accession": "MITE0000356", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Dehydrogenation"]}
+{"accession": "MITE0000356", "reaction": 2, "example": 1, "status": "no_shared_maps", "terms": ["Cyclization"]}
+{"accession": "MITE0000357", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation", "Ring expansion"]}
+{"accession": "MITE0000358", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Reduction"]}
+{"accession": "MITE0000359", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Acetylation"]}
+{"accession": "MITE0000360", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Reduction"]}
+{"accession": "MITE0000361", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Dehydrogenation", "Dioxygenation", "Ring expansion"]}
+{"accession": "MITE0000362", "reaction": 1, "example": 1, "status": "map_transfer_fail", "terms": ["Other"], "enzyme": "salbB", "sub_atoms": 22, "r_tmpl_atoms": 22, "prod_atoms": 33, "p_tmpl_atoms": 33}
+{"accession": "MITE0000364", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Halogenation"]}
+{"accession": "MITE0000365", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Reduction"]}
+{"accession": "MITE0000368", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Monooxygenation"], "enzyme": "AsmK"}
+{"accession": "MITE0000370", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Cyclization"]}
+{"accession": "MITE0000374", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Prenylation"]}
+{"accession": "MITE0000375", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Reduction"]}
+{"accession": "MITE0000376", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Halogenation"]}
+{"accession": "MITE0000377", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation"]}
+{"accession": "MITE0000379", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation"]}
+{"accession": "MITE0000380", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Hydroxylation"]}
+{"accession": "MITE0000381", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Cyclization"]}
+{"accession": "MITE0000382", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation"]}
+{"accession": "MITE0000385", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "PaPT"}
+{"accession": "MITE0000386", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Methylation"], "enzyme": "PaMT"}
+{"accession": "MITE0000386", "reaction": 1, "example": 3, "status": "extract_empty", "terms": ["Methylation"], "enzyme": "PaMT"}
+{"accession": "MITE0000394", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Hydroxylation"]}
+{"accession": "MITE0000395", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Cyclization", "Oxidation"]}
+{"accession": "MITE0000396", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 1, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 1, "example": 3, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 2, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 2, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 3, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 3, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 3, "example": 3, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 4, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 5, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 5, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 5, "example": 3, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 6, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 6, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 6, "example": 3, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 7, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 7, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 7, "example": 3, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 8, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 8, "example": 2, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000396", "reaction": 8, "example": 3, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "AtaPT"}
+{"accession": "MITE0000404", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Halogenation"]}
+{"accession": "MITE0000407", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Acetylation"], "enzyme": "Luz27"}
+{"accession": "MITE0000410", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "NysDI"}
+{"accession": "MITE0000431", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Amination"], "enzyme": "ThdD"}
+{"accession": "MITE0000436", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Dehydrogenation"], "enzyme": "BcmF"}
+{"accession": "MITE0000437", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Hydroxylation"], "enzyme": "BcmD"}
+{"accession": "MITE0000446", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "NanG5"}
+{"accession": "MITE0000451", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Glycosylation"], "enzyme": "RebG"}
+{"accession": "MITE0000452", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Monooxygenation", "Oxidation"], "enzyme": "PrnD"}
+{"accession": "MITE0000453", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Oxidation"]}
+{"accession": "MITE0000456", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Prenylation"], "enzyme": "DpasC"}
+{"accession": "MITE0000462", "reaction": 1, "example": 1, "status": "extract_empty", "terms": ["Oxidation"], "enzyme": "EgtB"}
+{"accession": "MITE0000464", "reaction": 1, "example": 1, "status": "no_shared_maps", "terms": ["Reduction"]}

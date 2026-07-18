@@ -1,0 +1,184 @@
+{
+  "bgc": "BGC0000054",
+  "product": "Erythromycin A",
+  "match_mode": "connectivity",
+  "endpoint_source": "C:\\papers\\deterministic_stage\\test_set_normalized.csv",
+  "endpoint_cluster_name": "Erythromycin",
+  "endpoint_smiles": "CC[C@H]1OC(=O)[C@H](C)[C@@H](O)[C@H](C)[C@@H](O)[C@@H](C)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@H]1C",
+  "endpoint_conn_key": "HQZOLNNEQAKEHT",
+  "rules_file": "C:\\papers\\jn_mite_merged_rules.tsv",
+  "n_rules": 391,
+  "n_jn": 65,
+  "n_mite": 326,
+  "steps": [
+    {
+      "step": 1,
+      "enzyme": "EryG",
+      "label": "\u2212 O-methylation (EryG)",
+      "substrate": "Erythromycin A",
+      "expected": "Erythromycin C",
+      "match_mode": "connectivity",
+      "n_candidate_rules": 30,
+      "n_firing_rules": 1,
+      "n_raw_firing_rules": 1,
+      "n_exact_rules": 1,
+      "fires": true,
+      "fires_raw": true,
+      "exact_match": true,
+      "best_rule": {
+        "rule_name": "mite_rdchiral_0003_MITE0000001",
+        "source": "MITE_rdchiral",
+        "terms": "Methylation",
+        "retro_smarts": "[C:1]-[O;H0;D2;+0:2]-[C;H3;D1;+0]>>[C:1]-[OH;D1;+0:2]",
+        "n_products": 1,
+        "exact_expected": true
+      },
+      "exact_rule_names": [
+        "MITE_rdchiral:mite_rdchiral_0003_MITE0000001"
+      ],
+      "exact_from_jn": false,
+      "exact_from_mite": true
+    },
+    {
+      "step": 2,
+      "enzyme": "EryK",
+      "label": "\u2212 C12 hydroxylation (EryK)",
+      "substrate": "Erythromycin C",
+      "expected": "Erythromycin D",
+      "match_mode": "connectivity",
+      "n_candidate_rules": 101,
+      "n_firing_rules": 11,
+      "n_raw_firing_rules": 12,
+      "n_exact_rules": 4,
+      "fires": true,
+      "fires_raw": true,
+      "exact_match": true,
+      "best_rule": {
+        "rule_name": "rule1165_1",
+        "source": "JN_rules",
+        "terms": "Hydroxylation-like oxygen insertion",
+        "retro_smarts": "[#6:1]-[#8:2].[#8:3]>>[#6;$([#6&!R]-[#6&R]1:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@1):1].[#8:2]-[#8:3]",
+        "n_products": 16,
+        "exact_expected": true
+      },
+      "exact_rule_names": [
+        "JN_rules:rule_p450_tert",
+        "MITE_rdchiral:mite_rdchiral_0035_MITE0000183",
+        "JN_rules:rule1165_1",
+        "JN_rules:rule1165_2"
+      ],
+      "exact_from_jn": true,
+      "exact_from_mite": true
+    },
+    {
+      "step": 3,
+      "enzyme": "EryCIII",
+      "label": "\u2212 desosamine glycosylation (EryCIII)",
+      "substrate": "Erythromycin D",
+      "expected": "3-O-mycarosyl-EB",
+      "match_mode": "connectivity",
+      "n_candidate_rules": 13,
+      "n_firing_rules": 11,
+      "n_raw_firing_rules": 13,
+      "n_exact_rules": 9,
+      "fires": true,
+      "fires_raw": true,
+      "exact_match": true,
+      "best_rule": {
+        "rule_name": "rule0009_39",
+        "source": "JN_rules",
+        "terms": "N-glycosylation",
+        "retro_smarts": "[#6:1]-[#8:3].[#8:2]>>[#6:1]-[#8:2].[#8;$([#8&!R]-[#6&!R]-&!@[#6&!R]-&!@[#6&!R]);!$([#8&!R]-[#6&!R]-&!@[#6&!R](-&!@[#7&!R]-&!@[#6&!R]=&!@[#8&!R])-&!@[#6&!R](-&!@[#8&!R])-&!@[#6&!R]=&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]);!$([#8&!R]-[#6&!R]-&!@[#6&!R](-&!@[#6&!R]-&!@[#8&!R]-&!@[#6&!R](-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R])=&!@[#8&!R])-&!@[#8&!R]-&!@[#6&!R](=&!@[#8&!R])-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]):3]",
+        "n_products": 15,
+        "exact_expected": true
+      },
+      "exact_rule_names": [
+        "JN_rules:rule0009_39",
+        "JN_rules:rule0009_16",
+        "JN_rules:rule0009_18",
+        "JN_rules:rule0009_20",
+        "JN_rules:rule0009_22",
+        "JN_rules:rule0009_27",
+        "JN_rules:rule0009_29",
+        "JN_rules:rule0009_31",
+        "JN_rules:rule_ogly_pyranose_1"
+      ],
+      "exact_from_jn": true,
+      "exact_from_mite": false
+    },
+    {
+      "step": 4,
+      "enzyme": "EryBV",
+      "label": "\u2212 mycarose glycosylation (EryBV)",
+      "substrate": "3-O-mycarosyl-EB",
+      "expected": "Erythronolide B",
+      "match_mode": "connectivity",
+      "n_candidate_rules": 13,
+      "n_firing_rules": 9,
+      "n_raw_firing_rules": 11,
+      "n_exact_rules": 9,
+      "fires": true,
+      "fires_raw": true,
+      "exact_match": true,
+      "best_rule": {
+        "rule_name": "rule0009_39",
+        "source": "JN_rules",
+        "terms": "N-glycosylation",
+        "retro_smarts": "[#6:1]-[#8:3].[#8:2]>>[#6:1]-[#8:2].[#8;$([#8&!R]-[#6&!R]-&!@[#6&!R]-&!@[#6&!R]);!$([#8&!R]-[#6&!R]-&!@[#6&!R](-&!@[#7&!R]-&!@[#6&!R]=&!@[#8&!R])-&!@[#6&!R](-&!@[#8&!R])-&!@[#6&!R]=&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]);!$([#8&!R]-[#6&!R]-&!@[#6&!R](-&!@[#6&!R]-&!@[#8&!R]-&!@[#6&!R](-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R])=&!@[#8&!R])-&!@[#8&!R]-&!@[#6&!R](=&!@[#8&!R])-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]):3]",
+        "n_products": 11,
+        "exact_expected": true
+      },
+      "exact_rule_names": [
+        "JN_rules:rule0009_39",
+        "JN_rules:rule0009_16",
+        "JN_rules:rule0009_18",
+        "JN_rules:rule0009_20",
+        "JN_rules:rule0009_22",
+        "JN_rules:rule0009_27",
+        "JN_rules:rule0009_29",
+        "JN_rules:rule0009_31",
+        "JN_rules:rule_ogly_pyranose_1"
+      ],
+      "exact_from_jn": true,
+      "exact_from_mite": false
+    },
+    {
+      "step": 5,
+      "enzyme": "EryF",
+      "label": "\u2212 C6 hydroxylation (EryF) \u2192 test_set core",
+      "substrate": "Erythronolide B",
+      "expected": "__TEST_SET_CORE__",
+      "match_mode": "connectivity",
+      "n_candidate_rules": 101,
+      "n_firing_rules": 11,
+      "n_raw_firing_rules": 12,
+      "n_exact_rules": 4,
+      "fires": true,
+      "fires_raw": true,
+      "exact_match": true,
+      "best_rule": {
+        "rule_name": "rule1165_1",
+        "source": "JN_rules",
+        "terms": "Hydroxylation-like oxygen insertion",
+        "retro_smarts": "[#6:1]-[#8:2].[#8:3]>>[#6;$([#6&!R]-[#6&R]1:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@[#6&R]:&@1):1].[#8:2]-[#8:3]",
+        "n_products": 6,
+        "exact_expected": true
+      },
+      "exact_rule_names": [
+        "JN_rules:rule_p450_tert",
+        "MITE_rdchiral:mite_rdchiral_0035_MITE0000183",
+        "JN_rules:rule1165_1",
+        "JN_rules:rule1165_2"
+      ],
+      "exact_from_jn": true,
+      "exact_from_mite": true
+    }
+  ],
+  "summary": {
+    "exact_steps": 5,
+    "firing_steps": 5,
+    "total_steps": 5,
+    "exact_jn_steps": 4,
+    "exact_mite_steps": 3
+  }
+}

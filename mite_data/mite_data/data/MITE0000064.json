@@ -1,0 +1,81 @@
+{
+    "accession": "MITE0000064",
+    "status": "active",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-3002-6458",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Initial entry. Reviewer 1 reworked reaction SMARTS numbering and added descriptions."
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        }
+    ],
+    "enzyme": {
+        "name": "PtlI",
+        "description": "Cytochrome P450",
+        "references": [
+            "doi:10.1021/ja0639214"
+        ],
+        "databaseIds": {
+            "uniprot": "Q82IY3",
+            "genpept": "BAC70710.1",
+            "mibig": "BGC0000678"
+        },
+        "cofactors": {
+            "inorganic": [
+                "Fe"
+            ],
+            "organic": [
+                "Heme"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Oxidation"
+            ],
+            "description": "Catalyzes oxidation of pentalen-13-al in the neopentalenolactone pathway",
+            "reactionSMARTS": "[#6:1]-[#6:2]1-[#6@:15]2-[#6@:10]3(-[#6@@:11](-[#6:13]-[#6:14]\\2)/[#6:12])-[#6:4](-[#6:5]-[#6:6](-[#6:9]/3)(-[#6:8])-[#6:7])-[#6:3]=1>>[#6:12]/[#6@:11]1-[#6@@:10]23-[#6@:15](-[#6:2](=[#6:3]-[#6:4]-2-[#6:5]-[#6:6](-[#6:9]/3)(-[#6:7])-[#6:8])-[#6:1]=[#8])\\[#6:14]-[#6:13]-1",
+            "reactions": [
+                {
+                    "substrate": "CC1=CC2CC(C)(C)C[C@@]23[C@H](C)CC[C@@H]13",
+                    "products": [
+                        "C[C@@H]1CC[C@H]2C(C=O)=CC3CC(C)(C)C[C@]312"
+                    ],
+                    "isIntermediate": true,
+                    "description": "Conversion of pentalenene to pentalen-13-al"
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "In vitro assay",
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1021/ja0639214"
+                ]
+            },
+            "databaseIds": {
+                "rhea": "31699",
+                "ec": "1.14.15.32"
+            }
+        }
+    ]
+}

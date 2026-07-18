@@ -1,0 +1,94 @@
+{
+    "accession": "MITE0000117",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG ID BGC0002069.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0002-6077-7490",
+                "0000-0002-4977-2541"
+            ],
+            "reviewers": [
+                "0000-0003-0443-9902",
+                "0000-0002-9747-3423"
+            ],
+            "comment": "Initial entry. Reviewer fixed reactionSMARTS:reactionSMARTS. Reviewer 2 changed enzyme and reaction description"
+        },
+        {
+            "version": "2",
+            "date": "2025-07-25",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Added cofactor information"
+        },
+        {
+            "version": "3",
+            "date": "2025-08-26",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Homogenized enzyme descriptions"
+        },
+        {
+            "version": "4",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC ID."
+        }
+    ],
+    "enzyme": {
+        "name": "StoR",
+        "description": "Oxidoreductase",
+        "references": [
+            "doi:10.1002/anie.201914154"
+        ],
+        "databaseIds": {
+            "genpept": "TMU76675.1"
+        },
+        "cofactors": {
+            "organic": [
+                "NADP"
+            ]
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Reduction"
+            ],
+            "description": "NADPH dependent reduction of exo-methylene in styrolide B to methyl group in styrolide A",
+            "reactionSMARTS": "[#8:16]-[c:13]1[c:12][c:11][c:10](\\[#6:9]=[#6:8]\\[#6:4]-2=[#6:3]-[#6:2](=[#6:1])-[#8:6]-[#6:5]2=[O:7])[c:15][c:14]1>>[#6:1]-[#6@H:2]-1-[#8:6]-[#6:5](=[O:7])-[#6:4](\\[#6:8]=[#6:9]\\[c:10]2[c:11][c:12][c:13](-[#8:16])[c:14][c:15]2)=[#6:3]-1",
+            "reactions": [
+                {
+                    "substrate": "C=C1C=C(/C=C/c2ccc(O)cc2)C(=O)O1",
+                    "products": [
+                        "C[C@@H]1C=C(/C=C/c2ccc(O)cc2)C(=O)O1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Inference from genomic data and chemical structure"
+                ],
+                "references": [
+                    "doi:10.1002/anie.201914154"
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "accession": "MITE0000099",
+    "status": "active",
+    "comment": "Previously referenced retired MIBiG entry BGC0001476.",
+    "changelog": [
+        {
+            "version": "1",
+            "date": "2024-07-30",
+            "contributors": [
+                "0000-0003-1763-2525",
+                "0009-0008-3623-3734",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609",
+                "0000-0003-0443-9902"
+            ],
+            "comment": "Initial entry. Reviewer partially fixed general aromaticity. Reviewer 2 reworked reaction SMARTS, reaction passes."
+        },
+        {
+            "version": "2",
+            "date": "2025-10-27",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Replaced retired UniProtKB ID with UniParc ID"
+        },
+        {
+            "version": "3",
+            "date": "2025-07-03",
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "reviewers": [
+                "0000-0001-6534-6609"
+            ],
+            "comment": "Removed retired MIBiG BGC."
+        }
+    ],
+    "enzyme": {
+        "name": "PumJ",
+        "description": "Pseudouridine synthase",
+        "references": [
+            "doi:10.1016/j.chembiol.2018.02.008"
+        ],
+        "databaseIds": {
+            "uniprot": "UPI000D22683E",
+            "genpept": "AVT42379.1"
+        }
+    },
+    "reactions": [
+        {
+            "tailoring": [
+                "Other"
+            ],
+            "reactionSMARTS": "[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[n:10]2:[#6:16](=[#8:17]):[nH:15]:[#6:13](=[#8:14]):[#6:12]:[#6:11]:2)-[#8:4]-1>>[#8:1]-[#6:2]/[#6@@:3]1-[#6@@:8](\\[#8:9])-[#6@@:6](\\[#8:7])-[#6@:5](/[#6:12]2:[#6:13](=[#8:14]):[nH:15]:[#6:16](=[#8:17]):[nH:10]:[#6:11]:2)-[#8:4]-1",
+            "reactions": [
+                {
+                    "substrate": "O=c1ccn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1",
+                    "products": [
+                        "O=c1[nH]cc([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)[nH]1"
+                    ],
+                    "isIntermediate": false
+                }
+            ],
+            "evidence": {
+                "evidenceCode": [
+                    "Knock-out studies"
+                ],
+                "references": [
+                    "doi:10.1016/j.chembiol.2018.02.008"
+                ]
+            }
+        }
+    ]
+}
